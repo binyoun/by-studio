@@ -64,7 +64,7 @@ async function loadCategoryPage(jsonPath) {
   const introEl = document.getElementById("cat-intro");
   if (titleEl) titleEl.textContent = data.category;
   if (introEl) introEl.textContent = data.intro || "";
-  document.title = `${data.category} — Synthetic Studio`;
+  document.title = `${data.category} · BY Studio`;
 
   renderList("trends", data.trends, trendCard);
   renderList("campaigns", data.campaigns, campaignCard);
