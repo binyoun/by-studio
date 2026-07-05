@@ -11,6 +11,10 @@
   .filter-group { margin-bottom: 1rem; }
   .filter-group .label { font-family: 'JetBrains Mono', monospace; font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; color: var(--dim); margin-bottom: .5rem; }
   .card .badges { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .3rem; }
+  .examples { margin-top: .4rem; padding-top: .6rem; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: .5rem; }
+  .example a { font-size: .82rem; font-weight: 600; text-decoration: none; color: var(--ink); border-bottom: 1px dotted var(--dim); }
+  .example a:hover { color: var(--accent); border-color: var(--accent); }
+  .example p { font-size: .8rem; margin-top: .15rem; }
 </style>
 </head>
 <body>
@@ -63,6 +67,18 @@
 
 <script src="../js/render.js"></script>
 <script>
+  function examplesHtml(examples) {
+    if (!examples || !examples.length) return "";
+    return `<div class="examples">${examples
+      .map(
+        (ex) => `<div class="example">
+          <a href="${esc(ex.url)}" target="_blank" rel="noopener">${esc(ex.title)}</a>
+          <p class="body-text">${esc(ex.body)}</p>
+        </div>`
+      )
+      .join("")}</div>`;
+  }
+
   function explorerCard(p) {
     const tags = [...p.genres, ...p.themes].map((t) => `<span class="tag">${esc(t)}</span>`).join("");
     return `<article class="card">
@@ -71,6 +87,7 @@
       <div class="body-text mono" style="font-size:.7rem;">${esc(p.years)} &middot; ${esc(p.nationality)}</div>
       <p class="body-text">${esc(p.bio)}</p>
       <div class="badges">${tags}</div>
+      ${examplesHtml(p.examples)}
       ${sourcesHtml([p.link])}
     </article>`;
   }

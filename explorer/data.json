@@ -435,100 +435,310 @@
     "name": "Oatly",
     "years": "est. 1994",
     "nationality": "Swedish",
-    "genres": ["Product", "Food"],
-    "themes": ["Branding and identity"],
+    "genres": [
+      "Product",
+      "Food"
+    ],
+    "themes": [
+      "Branding and identity"
+    ],
     "bio": "A Swedish oat-drink company that, since the mid-2010s under creative director John Schoolcraft, built its identity on bold, hand-lettered, black-and-white packaging that treats the carton itself as the ad: blunt copywriting, a visible design process, and deadpan humor in place of polished lifestyle photography.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Oatly" },
-    "type": "Brand"
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Oatly"
+    },
+    "type": "Brand",
+    "examples": [
+      {
+        "title": "\"It's Like Milk But Made For Humans\" trademark fight",
+        "body": "Oatly's provocative slogan was refused EU trademark registration, then upheld on appeal, with the court finding its controversial framing gave it distinctive character.",
+        "url": "https://www.dyoung.com/en/knowledgebank/articles/tm-oatly-general-court"
+      },
+      {
+        "title": "2023 climate footprint newspaper challenge",
+        "body": "Two-page ads in the New York Times, LA Times, and Washington Post showed Oatly's own carbon footprint data next to a blank page reserved for any dairy brand willing to publish the same.",
+        "url": "https://www.marketingdive.com/news/oatly-challenges-big-dairy-reveal-climate-footprint-free-ad-spac/649595/"
+      },
+      {
+        "title": "\"Wow No Cow\" Super Bowl LV ad (2021)",
+        "body": "CEO Toni Petersson sang an awkward original song alone in a field, deliberately courting a divisive, anti-slick reaction rather than a polished celebrity spot.",
+        "url": "https://adage.com/super-bowl/aa-oatly-wow-no-cow/"
+      }
+    ]
   },
   {
     "name": "Liquid Death",
     "years": "est. 2019",
     "nationality": "American",
-    "genres": ["Product", "Lifestyle"],
-    "themes": ["Branding and identity"],
+    "genres": [
+      "Product",
+      "Lifestyle"
+    ],
+    "themes": [
+      "Branding and identity"
+    ],
     "bio": "A canned water company built entirely on heavy-metal album-cover visual language and absurdist advertising, proof that a strong visual system can carry an entire category around a product, water, that has no flavor, color, or shape of its own to photograph.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Liquid_Death" },
-    "type": "Brand"
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Liquid_Death"
+    },
+    "type": "Brand",
+    "examples": [
+      {
+        "title": "\"Stop Exploding\" Super Bowl LX ad (2026)",
+        "body": "A mock PSA warning that rival energy drinks make heads explode, starring a real surgeon, launched Liquid Death's Sparkling Energy line.",
+        "url": "https://www.ispot.tv/ad/gOW3/liquid-death-sparkling-energy-super-bowl-2026-exploding-heads-featuring-dr-darshan-shah"
+      },
+      {
+        "title": "Blind taste-test prank campaign (2022)",
+        "body": "Blindfolded participants compared Liquid Death's new flavored sparkling water against absurd, expensive alternatives like squid ink to launch the line.",
+        "url": "https://www.marketingdive.com/news/liquid-death-pricey-disgusting-beverages-campaign-trail/625459/"
+      }
+    ]
   },
   {
     "name": "Chobani",
     "years": "est. 2005",
     "nationality": "American",
-    "genres": ["Food", "Product"],
-    "themes": ["Branding and identity"],
-    "bio": "An American yogurt company that rebranded in 2019 with the agency COLLINS, replacing clinical, clean-line dairy-aisle photography with warm, textured, editorial food imagery and hand-drawn illustration, part of a broader industry shift toward packaging that reads as farmers-market rather than laboratory.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Chobani" },
-    "type": "Brand"
+    "genres": [
+      "Food",
+      "Product"
+    ],
+    "themes": [
+      "Branding and identity"
+    ],
+    "bio": "An American yogurt company that redesigned its identity and packaging in-house in 2017-18 under chief creative officer Leland Maschmeyer, replacing clinical, clean-line dairy-aisle photography with a folk-art-inspired serif logotype and hand-drawn illustration, part of a broader industry shift toward packaging that reads as farmers-market rather than laboratory.",
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chobani"
+    },
+    "type": "Brand",
+    "examples": [
+      {
+        "title": "2017-18 identity and packaging redesign",
+        "body": "New serif logotype and folk-art-inspired illustration system, done in-house rather than through an external agency engagement.",
+        "url": "https://www.underconsideration.com/brandnew/archives/new_logo_identity_and_packaging_for_chobani_done_in_house.php"
+      },
+      {
+        "title": "\"Hungry Bear\" Super Bowl ad (2014)",
+        "body": "Chobani's first Super Bowl spot: a real bear ransacks a small-town general store searching for the yogurt.",
+        "url": "https://www.refinery29.com/en-us/2014/01/61281/bear-attack-nyc"
+      }
+    ]
   },
   {
     "name": "Blue Bottle Coffee",
     "years": "est. 2002",
     "nationality": "American",
-    "genres": ["Food", "Lifestyle", "Product"],
-    "themes": ["Branding and identity"],
+    "genres": [
+      "Food",
+      "Lifestyle",
+      "Product"
+    ],
+    "themes": [
+      "Branding and identity"
+    ],
     "bio": "A coffee company founded by James Freeman that built its visual identity around a spare, Japanese-influenced minimalism, single-origin labeling, quiet typography, uncluttered cafe design, standing apart from the louder branding typical of American coffee retail at the time.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Blue_Bottle_Coffee" },
-    "type": "Brand"
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Blue_Bottle_Coffee"
+    },
+    "type": "Brand",
+    "examples": [
+      {
+        "title": "NOLA product line identity",
+        "body": "Brand identity and packaging design by King & Partners for Blue Bottle's New Orleans-style iced coffee line.",
+        "url": "https://www.kingandpartners.com/work/blue-bottle-coffee-nola/"
+      },
+      {
+        "title": "Kyoto cafe design (2018)",
+        "body": "Blue Bottle's first Kyoto location, a restored century-old machiya townhouse near Nanzen-ji temple, designed by Schemata Architects.",
+        "url": "https://www.wallpaper.com/lifestyle/blue-bottle-coffee-shop-kyoto-japanese-zen-architecture"
+      }
+    ]
   },
   {
     "name": "Magnum",
     "years": "est. 1989",
     "nationality": "British-Dutch (Unilever)",
-    "genres": ["Food", "Fashion"],
-    "themes": ["Branding and identity"],
+    "genres": [
+      "Food",
+      "Fashion"
+    ],
+    "themes": [
+      "Branding and identity"
+    ],
     "bio": "Unilever's ice cream brand treats its product photography with the same glossy, indulgent visual language as a luxury fashion campaign, chocolate shatter shots, slow-motion bites, gold foil wrappers, elevating an inexpensive supermarket product into an aspirational object.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Magnum_(ice_cream)" },
-    "type": "Brand"
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Magnum_(ice_cream)"
+    },
+    "type": "Brand",
+    "examples": [
+      {
+        "title": "\"7 Deadly Sins\" limited-edition range (2002-03)",
+        "body": "Seven ice creams each themed to a deadly sin, Lust, Sloth, Greed among them, with matching TV spots.",
+        "url": "https://www.filmmaster.com/magnum-seven-sins"
+      },
+      {
+        "title": "Charli XCX Cannes campaign (2025)",
+        "body": "A beach party on the Croisette with Charli XCX launched Magnum's 2025 global \"Crack Into Pleasure\" campaign.",
+        "url": "https://www.globenewswire.com/news-release/2025/05/16/3083244/0/en/Charli-xcx-Crushes-Cannes-Convention-at-Magnum-Beach-Party-to-Launch-CrackIntoPleasure-Campaign.html"
+      }
+    ]
   },
   {
     "name": "Aesop",
     "years": "est. 1987",
     "nationality": "Australian",
-    "genres": ["Product", "Lifestyle"],
-    "themes": ["Branding and identity"],
+    "genres": [
+      "Product",
+      "Lifestyle"
+    ],
+    "themes": [
+      "Branding and identity"
+    ],
     "bio": "A skincare company that applies one consistent literary, apothecary-style visual identity, amber glass bottles, dense typographic labels, architect-designed stores, across every physical and packaging touchpoint, treating retail design itself as the primary visual medium rather than campaign photography.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Aesop_(cosmetics)" },
-    "type": "Brand"
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aesop_(cosmetics)"
+    },
+    "type": "Brand",
+    "examples": [
+      {
+        "title": "Bath store, UK",
+        "body": "Restoration of a five-storey Georgian townhouse with design studio JamesPlumb, exposing hidden architectural features and using local Bath stone.",
+        "url": "https://www.wallpaper.com/lifestyle/aesop-bath-library-store"
+      },
+      {
+        "title": "Milan, Piazza Cordusio store (2024)",
+        "body": "Aesop's in-house design team built a light-green, curved interior referencing the nearby metro line, unveiled at Salone del Mobile 2024.",
+        "url": "https://www.wallpaper.com/architecture/aesop-milan-store-italy"
+      }
+    ]
   },
   {
     "name": "Pentagram",
     "years": "est. 1972",
     "nationality": "British-American",
-    "genres": ["Product", "Lifestyle"],
-    "themes": ["Branding and identity"],
+    "genres": [
+      "Product",
+      "Lifestyle"
+    ],
+    "themes": [
+      "Branding and identity"
+    ],
     "bio": "The world's largest independent design consultancy, structured as a partnership of individually credited partners rather than a single house style, producing identity and visual systems work across branding, product, and editorial design for over five decades.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Pentagram" },
-    "type": "Studio"
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pentagram"
+    },
+    "type": "Studio",
+    "examples": [
+      {
+        "title": "Mastercard logo and identity redesign (2016)",
+        "body": "Simplified the interlocking red and yellow circles and introduced the lowercase wordmark, the brand's first update in 20 years.",
+        "url": "https://www.itsnicethat.com/news/mastercard-brand-mark-refresh-by-pentagram-150716"
+      },
+      {
+        "title": "Saks Fifth Avenue identity and packaging",
+        "body": "Michael Bierut-led project splitting the 1973 Saks cursive logo into 64 recombinable tiles used across signage, packaging, and advertising.",
+        "url": "https://www.pentagram.com/work/saks-fifth-avenue"
+      }
+    ]
   },
   {
     "name": "Wieden+Kennedy",
     "years": "est. 1982",
     "nationality": "American",
-    "genres": ["Lifestyle", "Sports and action"],
-    "themes": ["Branding and identity"],
+    "genres": [
+      "Lifestyle",
+      "Sports and action"
+    ],
+    "themes": [
+      "Branding and identity"
+    ],
     "bio": "An advertising agency that built Nike's Just Do It visual language and decades of its sports and lifestyle campaign imagery, known industry-wide for treating advertising as cultural production rather than straightforward product demonstration.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Wieden%2BKennedy" },
-    "type": "Studio"
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wieden%2BKennedy"
+    },
+    "type": "Studio",
+    "examples": [
+      {
+        "title": "Nike \"Just Do It\" (1988)",
+        "body": "The agency's original tagline and campaign, credited with helping grow Nike's US shoe market share from 18% to 43% over the following decade.",
+        "url": "https://en.wikipedia.org/wiki/Just_Do_It"
+      },
+      {
+        "title": "Old Spice \"The Man Your Man Could Smell Like\" (2010)",
+        "body": "Isaiah Mustafa's single-take direct-address monologue campaign, winner of the Cannes Lions Grand Prix.",
+        "url": "https://en.wikipedia.org/wiki/The_Man_Your_Man_Could_Smell_Like"
+      },
+      {
+        "title": "Nike \"Dream Crazy\" featuring Colin Kaepernick (2018)",
+        "body": "The 30th-anniversary \"Just Do It\" film built around athletes' social sacrifice, one of the most discussed ad campaigns of its decade.",
+        "url": "https://www.wk.com/work/nike-dream-crazy/"
+      }
+    ]
   },
   {
     "name": "Sagmeister & Walsh",
     "years": "est. 2012",
     "nationality": "American",
-    "genres": ["Conceptual", "Product"],
-    "themes": ["Branding and identity"],
+    "genres": [
+      "Conceptual",
+      "Product"
+    ],
+    "themes": [
+      "Branding and identity"
+    ],
     "bio": "A New York design studio founded by Stefan Sagmeister and Jessica Walsh, known for provocative, conceptually driven visual identity work that treats a client's branding as a vehicle for a bigger idea rather than a neutral visual system.",
-    "link": { "label": "Official site", "url": "https://www.sagmeisterwalsh.com/" },
-    "type": "Studio"
+    "link": {
+      "label": "Official site",
+      "url": "https://www.sagmeisterwalsh.com/"
+    },
+    "type": "Studio",
+    "examples": [
+      {
+        "title": "\"The Happy Show\" (2012-13)",
+        "body": "An immersive touring exhibition on happiness, with Stefan Sagmeister as creative lead and Jessica Walsh credited for art direction and design.",
+        "url": "https://sagmeister.com/work/the-happy-show/"
+      },
+      {
+        "title": "MILLY fashion label rebrand (2016)",
+        "body": "A flexible logotype system, floral, icy, painted variants, built to evolve alongside MILLY's seasonal collections rather than staying fixed.",
+        "url": "https://www.designboom.com/design/sagmeister-walsh-milly-08-19-2016/"
+      }
+    ]
   },
   {
     "name": "Baron & Baron",
     "years": "est. 1993",
     "nationality": "American",
-    "genres": ["Fashion"],
-    "themes": ["Branding and identity"],
+    "genres": [
+      "Fashion"
+    ],
+    "themes": [
+      "Branding and identity"
+    ],
     "bio": "A fashion image-making and branding agency behind advertising campaigns and packaging for major luxury houses, working across photography direction, art direction, and brand identity to build a fashion house's whole visual world rather than a single campaign.",
-    "link": { "label": "Official site", "url": "https://www.baronbaron.com/" },
-    "type": "Studio"
+    "link": {
+      "label": "Official site",
+      "url": "https://www.baronbaron.com/"
+    },
+    "type": "Studio",
+    "examples": [
+      {
+        "title": "Madonna's \"Sex\" book (1992)",
+        "body": "Fabien Baron art-directed the book (with photographer Steven Meisel), shaping its metal cover and Mylar-bag packaging concept.",
+        "url": "https://en.wikipedia.org/wiki/Sex_(book)"
+      },
+      {
+        "title": "Calvin Klein \"Downtown\" fragrance campaign (2013)",
+        "body": "Fabien Baron and Baron & Baron directed the Rooney Mara campaign, itself directed by David Fincher.",
+        "url": "https://adage.com/creativity/work/downtown/32104/"
+      }
+    ]
   }
 ]
