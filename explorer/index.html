@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Explorer &middot; BY Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/style.css" />
+<style>
+  .filter-group { margin-bottom: 1rem; }
+  .filter-group .label { font-family: 'JetBrains Mono', monospace; font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; color: var(--dim); margin-bottom: .5rem; }
+  .card .badges { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .3rem; }
+</style>
+</head>
+<body>
+<nav class="top">
+  <a class="brand" href="../index.html">BY <span class="accent">Studio</span></a>
+  <div class="links">
+    <a href="../index.html">home</a>
+    <a href="../camera-basics/index.html">camera basics</a>
+    <a href="../genres/index.html">genres</a>
+    <a href="../composition/index.html">composition</a>
+    <a href="index.html" class="active">explorer</a>
+    <a href="../ai-trends/index.html">ai trends</a>
+  </div>
+</nav>
+
+<header class="page">
+  <div class="mono eyebrow">05 &middot; explore</div>
+  <h1>Photographer &amp; Artist Explorer</h1>
+  <p class="intro">
+    25 photographers and lens-based artists, historical and contemporary, spanning the genres and
+    themes covered elsewhere in BY Studio. Filter by genre, by theme, or both together. Product and
+    food are thin here on purpose: most canonical named photographers built careers in editorial,
+    documentary, or fine-art work rather than commercial catalog or menu photography, a real gap
+    worth noticing rather than papering over.
+  </p>
+</header>
+
+<main>
+  <section class="block">
+    <div class="filter-group">
+      <div class="label">genre</div>
+      <div class="category-nav" id="genre-filters"></div>
+    </div>
+    <div class="filter-group">
+      <div class="label">theme</div>
+      <div class="category-nav" id="theme-filters"></div>
+    </div>
+    <div class="card-grid" id="items"></div>
+  </section>
+</main>
+
+<footer class="site">
+  built for students, not clients &middot; <a href="https://github.com/binyoun/by-studio" target="_blank" rel="noopener">the repo</a> &middot; no em-dashes, on principle
+</footer>
+
+<script src="../js/render.js"></script>
+<script>
+  function explorerCard(p) {
+    const tags = [...p.genres, ...p.themes].map((t) => `<span class="tag">${esc(t)}</span>`).join("");
+    return `<article class="card">
+      <h3>${esc(p.name)}</h3>
+      <div class="body-text mono" style="font-size:.7rem;">${esc(p.years)} &middot; ${esc(p.nationality)}</div>
+      <p class="body-text">${esc(p.bio)}</p>
+      <div class="badges">${tags}</div>
+      ${sourcesHtml([p.link])}
+    </article>`;
+  }
+
+  async function init() {
+    const people = await (await fetch("data.json")).json();
+    let activeGenre = "all";
+    let activeTheme = "all";
+
+    const genres = ["all", ...new Set(people.flatMap((p) => p.genres))];
+    const themes = ["all", ...new Set(people.flatMap((p) => p.themes))];
+
+    function renderFilters() {
+      document.getElementById("genre-filters").innerHTML = genres
+        .map((g) => `<a href="#" data-genre="${esc(g)}" class="${g === activeGenre ? "active" : ""}">${esc(g)}</a>`)
+        .join("");
+      document.getElementById("theme-filters").innerHTML = themes
+        .map((t) => `<a href="#" data-theme="${esc(t)}" class="${t === activeTheme ? "active" : ""}">${esc(t)}</a>`)
+        .join("");
+
+      document.querySelectorAll("#genre-filters a").forEach((a) => {
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          activeGenre = a.dataset.genre;
+          renderFilters();
+          renderPeople();
+        });
+      });
+      document.querySelectorAll("#theme-filters a").forEach((a) => {
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          activeTheme = a.dataset.theme;
+          renderFilters();
+          renderPeople();
+        });
+      });
+    }
+
+    function renderPeople() {
+      const filtered = people.filter((p) => {
+        const genreOk = activeGenre === "all" || p.genres.includes(activeGenre);
+        const themeOk = activeTheme === "all" || p.themes.includes(activeTheme);
+        return genreOk && themeOk;
+      });
+      renderList("items", filtered, explorerCard);
+    }
+
+    renderFilters();
+    renderPeople();
+  }
+  init();
+</script>
+</body>
+</html>

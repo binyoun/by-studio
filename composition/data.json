@@ -30,5 +30,29 @@
   {
     "title": "Balance",
     "body": "An off-center subject needs something, however small, on the opposite side of the frame to keep the composition from feeling like it's toppling over, a smaller secondary object, a patch of color, even just open space of a different tone. This isn't the same as symmetry: balance can be entirely asymmetrical, a large subject on one side counterweighted by a small but visually heavy detail on the other, as long as the two sides feel like they're in conversation rather than one being simply empty."
+  },
+  {
+    "title": "Golden ratio and Fibonacci spiral",
+    "body": "A refinement of the rule of thirds: instead of an even grid, the frame is divided by a ratio (roughly 1 to 1.618) found throughout natural growth patterns, shells, flowers, spiral galaxies. Plotted as a spiral, it suggests a path for the eye that curves inward toward the subject rather than snapping to a straight grid line. It's subtler and harder to apply deliberately than the rule of thirds, which is why most photographers use it as a check after the fact rather than a framing tool in the moment."
+  },
+  {
+    "title": "Rule of space",
+    "body": "A subject that is moving, looking, or gesturing in a direction needs room in the frame to move, look, or gesture into. Crop that space away and the image feels cramped and unresolved, as if the subject is about to walk straight into the edge of the photograph. Leaving that room, sometimes called nose room or lead room, is a small adjustment that makes a directional subject feel like it belongs inside the frame rather than trapped at its border."
+  },
+  {
+    "title": "Perspective and vantage point",
+    "body": "Where the camera is placed relative to the subject changes what the image means, not just what it shows. A low angle looking up makes a subject read as powerful or looming, the classic hero shot. A high angle looking down can make a subject read as small or vulnerable. Eye level reads as neutral and direct. Extreme versions, a bird's eye view flattening a crowd into pattern, a worm's eye view from ground level, trade familiarity for drama, and are usually chosen precisely because they force the viewer to see something ordinary in an unfamiliar way."
+  },
+  {
+    "title": "Juxtaposition",
+    "body": "Placing two unlike things in the same frame, old beside new, wealth beside poverty, a static object beside implied motion, makes a viewer compare them whether the image says anything about it directly or not. This is a compositional decision as much as a conceptual one: it depends on physically arranging or waiting for both elements to occupy the frame together, at a scale and position where the contrast reads immediately rather than needing a caption to explain it."
+  },
+  {
+    "title": "Fill the frame and minimalism",
+    "body": "The opposite move from negative space: cropping in tight enough that the subject, or a single detail of it, occupies almost the entire frame, removing context and surroundings entirely. This forces attention onto texture, shape, and gesture rather than place, and is common in macro work, in portraiture that wants total intimacy, and in minimalist compositions that reduce a scene to one shape, one line, one gesture, and nothing else competing for the eye."
+  },
+  {
+    "title": "Rhythm and repetition",
+    "body": "A series of similar elements, columns, waves, a row of streetlights, spaced across the frame creates a visual beat the eye follows across the image, similar to symmetry and pattern but looser: the repetition doesn't need to be perfectly regular to work, and a gradual change across the sequence, receding size, shifting color, adds a sense of movement or time passing that a perfectly uniform pattern doesn't."
   }
 ]

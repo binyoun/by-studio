@@ -8,10 +8,11 @@ No build step, no framework. Plain HTML/CSS/JS, shared `css/style.css` and `js/r
 
 | Section | Content |
 |---|---|
-| `index.html` | BY Studio landing, links into all four sections |
+| `index.html` | BY Studio landing, links into all five sections |
 | `camera-basics/` | The exposure triangle, shutter speed, aperture/depth of field, ISO, white balance, focal length, metering |
 | `genres/` | Portrait, product, food, fashion, lifestyle, street, landscape, architecture, sports/action, macro. The first five link through to their `ai-trends/` page |
-| `composition/` | Rule of thirds, leading lines, framing, symmetry, negative space, depth, color, balance |
+| `composition/` | Rule of thirds, leading lines, framing, symmetry, negative space, depth, color, balance, golden ratio, rule of space, perspective, juxtaposition, fill the frame, rhythm |
+| `explorer/` | 25 photographers and lens-based artists, filterable by genre and by theme, a deliberately global mix spanning historical and contemporary work |
 | `ai-trends/` | A sourced 2025/2026 field guide to AI image generation in commercial photography (portrait, product, food, lifestyle, fashion), formerly the standalone Synthetic Studio site. See `ai-trends/research/2025-2026-sources.md` for the full citation list. |
 
 ## Editing content
