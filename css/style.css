@@ -52,7 +52,8 @@ section.block h2 {
   padding-bottom: .6rem; border-bottom: 1px solid var(--line);
 }
 
-.card-grid { display: grid; gap: 1.1rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.card-grid { display: flex; flex-wrap: wrap; gap: 1.1rem; justify-content: center; }
+.card-grid > * { flex: 1 1 280px; max-width: 360px; }
 
 .card {
   background: var(--panel); border: 1px solid var(--line); padding: 1.1rem 1.2rem;

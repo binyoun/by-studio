@@ -40,7 +40,7 @@
     position: absolute; left: 0; right: 0; top: -2px; height: 2px; z-index: 1; pointer-events: none;
     background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0;
   }
-  .section-card:hover .sweep { opacity: .9; animation: sweepDown 1.8s linear infinite; }
+  .section-card:hover .sweep { opacity: .9; animation: sweepDown .9s ease-out; }
   .section-card .ghost-num {
     position: absolute; right: .5rem; bottom: -.9rem; font-family: 'JetBrains Mono', monospace;
     font-size: 4.8rem; font-weight: 600; color: var(--line); z-index: 0; line-height: 1;
@@ -125,7 +125,7 @@
     </div>
     <button type="button" id="surprise-btn">surprise me</button>
     <div id="search-status"></div>
-    <div class="card-grid" id="search-results"></div>
+    <div id="search-results"></div>
   </section>
 
   <section class="block">
