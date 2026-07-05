@@ -10,12 +10,34 @@
 <style>
   .section-card {
     text-decoration: none; display: block; background: var(--panel); border: 1px solid var(--line);
-    padding: 1.4rem 1.5rem; transition: border-color .2s;
+    padding: 1.4rem 1.5rem; transition: border-color .2s; position: relative;
   }
   .section-card:hover { border-color: var(--accent); }
   .section-card .num { font-family: 'JetBrains Mono', monospace; font-size: .68rem; color: var(--accent); letter-spacing: .1em; }
   .section-card h3 { font-size: 1.15rem; font-weight: 600; margin: .5rem 0 .5rem; }
   .section-card p { color: var(--dim); font-size: .88rem; }
+  .section-card .stat {
+    margin-top: .8rem; font-family: 'JetBrains Mono', monospace; font-size: .64rem; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--dim); min-height: 1em;
+  }
+
+  .search-wrap { position: relative; }
+  #search-input {
+    width: 100%; background: var(--panel); border: 1px solid var(--line); color: var(--ink);
+    font-family: 'Space Grotesk', sans-serif; font-size: 1.05rem; padding: .9rem 1.1rem;
+  }
+  #search-input:focus { outline: none; border-color: var(--accent); }
+  #search-input::placeholder { color: var(--dim); }
+  #surprise-btn {
+    margin-top: .8rem; background: none; border: 1px solid var(--line); color: var(--dim);
+    font-family: 'JetBrains Mono', monospace; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase;
+    padding: .5rem .9rem; cursor: pointer;
+  }
+  #surprise-btn:hover { color: var(--accent); border-color: var(--accent); }
+  #search-status { font-family: 'JetBrains Mono', monospace; font-size: .68rem; color: var(--dim); margin: .8rem 0; min-height: 1em; }
+  #search-results a.result-title { text-decoration: none; color: var(--ink); }
+  #search-results a.result-title:hover { color: var(--accent); }
+  #search-results .card .tag { margin-bottom: .3rem; }
 </style>
 </head>
 <body>
@@ -37,12 +59,22 @@
   <p class="intro">
     A teaching hub for photography students: the fundamentals that don't change, and the
     trends that change every year. Camera basics, the genres of commercial photography,
-    composition, and a sourced field guide to how AI image generation is actually being
-    used in the industry right now.
+    composition, a photographer and brand explorer, and a sourced field guide to how AI
+    image generation is actually being used in the industry right now.
   </p>
 </header>
 
 <main>
+  <section class="block">
+    <h2>search everything</h2>
+    <div class="search-wrap">
+      <input type="text" id="search-input" placeholder="try &quot;aperture&quot;, &quot;Nike&quot;, &quot;rule of thirds&quot;, &quot;Nano Banana&quot;&hellip;" autocomplete="off" />
+    </div>
+    <button type="button" id="surprise-btn">surprise me</button>
+    <div id="search-status"></div>
+    <div class="card-grid" id="search-results"></div>
+  </section>
+
   <section class="block">
     <h2>sections</h2>
     <div class="card-grid">
@@ -50,21 +82,31 @@
         <span class="num">01</span>
         <h3>Camera Basics</h3>
         <p>The exposure triangle, shutter speed, aperture, depth of field, ISO, white balance, and lens choice. What every photograph is actually made of.</p>
+        <div class="stat" data-stat="camera-basics"></div>
       </a>
       <a class="section-card" href="genres/index.html">
         <span class="num">02</span>
         <h3>Genres of Photography</h3>
         <p>What defines portrait, product, food, fashion, lifestyle, street, landscape, architecture, sports, and macro work, and what each genre technically demands.</p>
+        <div class="stat" data-stat="genres"></div>
       </a>
       <a class="section-card" href="composition/index.html">
         <span class="num">03</span>
         <h3>Composition</h3>
         <p>Rule of thirds, leading lines, framing, symmetry, negative space, depth, color, and balance: the principles behind why an image works.</p>
+        <div class="stat" data-stat="composition"></div>
+      </a>
+      <a class="section-card" href="explorer/index.html">
+        <span class="num">04</span>
+        <h3>Photographer &amp; Artist Explorer</h3>
+        <p>Photographers, studios, and brands doing well in visuals, historical and contemporary, filterable by type, genre, and theme.</p>
+        <div class="stat" data-stat="explorer"></div>
       </a>
       <a class="section-card" href="ai-trends/index.html">
-        <span class="num">04</span>
+        <span class="num">05</span>
         <h3>AI &times; Commercial Photography</h3>
         <p>A sourced 2025/2026 field guide to how AI image generation is actually integrated into portrait, product, food, lifestyle, and fashion work today.</p>
+        <div class="stat" data-stat="ai-trends"></div>
       </a>
     </div>
   </section>
@@ -73,5 +115,116 @@
 <footer class="site">
   built for students, not clients &middot; <a href="https://github.com/binyoun/by-studio" target="_blank" rel="noopener">the repo</a> &middot; no em-dashes, on principle
 </footer>
+
+<script src="js/render.js"></script>
+<script>
+  const AI_CATEGORIES = ["portrait", "product", "food", "lifestyle", "fashion"];
+  let index = [];
+  let statCounts = {};
+
+  function addEntries(section, url, items, mapFn) {
+    for (const item of items || []) {
+      const mapped = mapFn(item);
+      if (mapped.title && mapped.body) index.push({ section, url, ...mapped });
+    }
+  }
+
+  async function buildIndex() {
+    const [camera, genres, composition, explorerData, glossary, overview, ...cats] = await Promise.all([
+      fetch("camera-basics/data.json").then((r) => r.json()),
+      fetch("genres/data.json").then((r) => r.json()),
+      fetch("composition/data.json").then((r) => r.json()),
+      fetch("explorer/data.json").then((r) => r.json()),
+      fetch("ai-trends/data/glossary.json").then((r) => r.json()),
+      fetch("ai-trends/data/overview.json").then((r) => r.json()),
+      ...AI_CATEGORIES.map((c) => fetch(`ai-trends/data/${c}.json`).then((r) => r.json())),
+    ]);
+
+    statCounts["camera-basics"] = camera.length;
+    statCounts["genres"] = genres.length;
+    statCounts["composition"] = composition.length;
+    statCounts["explorer"] = explorerData.length;
+    let trendCount = 0;
+
+    addEntries("Camera Basics", "camera-basics/index.html", camera, (t) => ({ title: t.title, body: t.body }));
+    addEntries("Genres", "genres/index.html", genres, (t) => ({ title: t.title, body: t.body }));
+    addEntries("Composition", "composition/index.html", composition, (t) => ({ title: t.title, body: t.body }));
+    addEntries("Explorer", "explorer/index.html", explorerData, (p) => ({ title: p.name, body: p.bio }));
+    for (const p of explorerData) {
+      for (const ex of p.examples || []) {
+        index.push({ section: `Explorer: ${p.name}`, url: ex.url, title: ex.title, body: ex.body });
+      }
+    }
+    addEntries("Glossary", "ai-trends/glossary.html", glossary, (g) => ({ title: g.term, body: g.definition }));
+    addEntries("AI Trends", "ai-trends/index.html", overview.platformPolicy, (p) => ({ title: p.title, body: p.body }));
+    addEntries("AI Trends", "ai-trends/index.html", overview.timeline, (t) => ({ title: t.release, body: t.relevance }));
+
+    cats.forEach((data, i) => {
+      const cat = AI_CATEGORIES[i];
+      const url = `ai-trends/${cat}.html`;
+      const label = `AI Trends: ${data.category}`;
+      addEntries(label, url, data.trends, (t) => ({ title: t.title, body: t.body }));
+      addEntries(label, url, data.tools, (t) => ({ title: t.name, body: t.note }));
+      addEntries(label, url, data.campaigns, (t) => ({ title: t.title, body: t.body }));
+      addEntries(label, url, data.controversies, (t) => ({ title: t.title, body: t.body }));
+      trendCount += (data.trends || []).length;
+    });
+
+    statCounts["ai-trends"] = trendCount;
+    renderStats();
+  }
+
+  function renderStats() {
+    document.querySelectorAll("[data-stat]").forEach((el) => {
+      const key = el.dataset.stat;
+      const n = statCounts[key];
+      if (n == null) return;
+      const labels = {
+        "camera-basics": `${n} fundamentals`,
+        "genres": `${n} genres`,
+        "composition": `${n} principles`,
+        "explorer": `${n} profiles`,
+        "ai-trends": `${n} trends across 5 categories`,
+      };
+      el.textContent = labels[key] || `${n} entries`;
+    });
+  }
+
+  function resultCard(item) {
+    const snippet = item.body.length > 200 ? esc(item.body.slice(0, 200)) + "&hellip;" : esc(item.body);
+    return `<article class="card">
+      <span class="tag">${esc(item.section)}</span>
+      <h3><a class="result-title" href="${esc(item.url)}">${esc(item.title)}</a></h3>
+      <p class="body-text">${snippet}</p>
+    </article>`;
+  }
+
+  function runSearch(query) {
+    const status = document.getElementById("search-status");
+    const q = query.trim().toLowerCase();
+    if (!q) {
+      status.textContent = "";
+      renderList("search-results", [], resultCard);
+      return;
+    }
+    const matches = index.filter(
+      (item) => item.title.toLowerCase().includes(q) || item.body.toLowerCase().includes(q) || item.section.toLowerCase().includes(q)
+    );
+    status.textContent = `${matches.length} result${matches.length === 1 ? "" : "s"} across ${index.length} indexed entries`;
+    renderList("search-results", matches.slice(0, 24), resultCard);
+  }
+
+  document.getElementById("search-input").addEventListener("input", (e) => runSearch(e.target.value));
+
+  document.getElementById("surprise-btn").addEventListener("click", () => {
+    if (!index.length) return;
+    const pick = index[Math.floor(Math.random() * index.length)];
+    document.getElementById("search-input").value = "";
+    document.getElementById("search-status").textContent = `surprise pick, from ${index.length} indexed entries`;
+    renderList("search-results", [pick], resultCard);
+  });
+
+  buildIndex();
+</script>
 </body>
 </html>
