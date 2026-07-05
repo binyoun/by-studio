@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tools — Synthetic Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<nav class="top">
+  <a class="brand" href="index.html">Synthetic <span class="accent">Studio</span></a>
+  <div class="links">
+    <a href="index.html">overview</a>
+    <a href="portrait.html">portrait</a>
+    <a href="product.html">product</a>
+    <a href="food.html">food</a>
+    <a href="lifestyle.html">lifestyle</a>
+    <a href="fashion.html">fashion</a>
+    <a href="tools.html" class="active">tools</a>
+    <a href="glossary.html">glossary</a>
+  </div>
+</nav>
+
+<header class="page">
+  <div class="mono eyebrow">reference</div>
+  <h1>Tools &amp; platforms</h1>
+  <p class="intro">Every tool named on the category pages, in one place. Derived directly from each category's data, so it never drifts out of sync with the category pages themselves.</p>
+</header>
+
+<main>
+  <section class="block">
+    <div class="category-nav" id="filters"></div>
+    <div class="card-grid" id="tools-list"></div>
+  </section>
+</main>
+
+<footer class="site">
+  built for students, not clients &middot; sources in <a href="https://github.com/binyoun/synthetic-studio" target="_blank" rel="noopener">the repo</a> &middot; no em-dashes, on principle
+</footer>
+
+<script src="js/render.js"></script>
+<script>
+  const CATEGORY_FILES = ["data/portrait.json", "data/product.json", "data/food.json", "data/lifestyle.json", "data/fashion.json"];
+  const CATEGORY_LABELS = ["portrait", "product", "food", "lifestyle", "fashion"];
+
+  async function init() {
+    const tools = await loadAllTools(CATEGORY_FILES);
+    let active = "all";
+
+    function renderFilters() {
+      const chips = ["all", ...CATEGORY_LABELS];
+      document.getElementById("filters").innerHTML = chips
+        .map((c) => `<a href="#" data-cat="${c}" class="${c === active ? "active" : ""}">${c}</a>`)
+        .join("");
+      document.querySelectorAll("#filters a").forEach((a) => {
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          active = a.dataset.cat;
+          renderFilters();
+          renderTools();
+        });
+      });
+    }
+
+    function renderTools() {
+      const filtered = active === "all" ? tools : tools.filter((t) => (t.categories || []).includes(active));
+      renderList("tools-list", filtered, toolCard);
+    }
+
+    renderFilters();
+    renderTools();
+  }
+  init();
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+{
+  "category": "Product",
+  "intro": "Product photography is where AI moved fastest from novelty to infrastructure: the platforms sellers already use, Amazon, Google, Shopify, now generate the imagery themselves. The pattern to teach is which work automates first, and which stays a human job.",
+  "trends": [
+    {
+      "title": "AI staging tools sell themselves as studio replacements",
+      "body": "Photoroom and Flair.ai openly market AI-generated product scenes as a substitute for a studio shoot, with industry guides claiming 80 to 95 percent cost reduction per image against $200 to $5,000 traditional sessions.",
+      "sources": [
+        { "label": "Photoroom", "url": "https://www.photoroom.com/blog/ai-tools-product-photography" },
+        { "label": "Digital Applied", "url": "https://www.digitalapplied.com/blog/ai-product-photography-tools-ecommerce-2026-guide" }
+      ]
+    },
+    {
+      "title": "Marketplaces build generation directly into the seller tools",
+      "body": "Amazon's AI Creative Studio turns a basic product photo into lifestyle imagery and video inside Seller Central; Amazon Ads reported roughly 5 percent more sales for advertisers using its Image Generator. Google's Product Studio does free text-to-image product staging in Merchant Center and via Shopify.",
+      "sources": [
+        { "label": "Amazon Ads", "url": "https://advertising.amazon.com/library/news/unboxed-ai-announcement" },
+        { "label": "Retail Dive", "url": "https://www.retaildive.com/news/google-product-studio-imagery-generative-artificial-intelligence/651113/" }
+      ]
+    },
+    {
+      "title": "Catalog-scale consistency, not one-off hero images, is the real product",
+      "body": "Photoroom's pitch is standardizing lighting and background across large SKU catalogs; Flair leans toward conceptual lifestyle scenes. The useful distinction for students is production tool versus creative tool.",
+      "sources": [{ "label": "Photoroom", "url": "https://www.photoroom.com/ai-product-photography/e-commerce" }]
+    },
+    {
+      "title": "In-context editing makes compositing prompt-based",
+      "body": "Flux.1 Kontext landed inside Adobe Photoshop's beta Generative Fill in September 2025 as a selectable model, and Google's Nano Banana Pro now powers image generation inside Google Ads directly.",
+      "sources": [
+        { "label": "Wikipedia: Flux", "url": "https://en.wikipedia.org/wiki/Flux_(text-to-image_model)" },
+        { "label": "Google", "url": "https://blog.google/technology/ai/nano-banana-pro/" }
+      ]
+    }
+  ],
+  "tools": [
+    { "name": "Photoroom", "url": "https://www.photoroom.com/", "note": "AI product photo backgrounds and catalog-scale batch editing", "categories": ["product", "food"] },
+    { "name": "Flair.ai", "url": "https://flair.ai/", "note": "AI conceptual product scenes", "categories": ["product"] },
+    { "name": "Amazon AI Creative Studio", "url": "https://advertising.amazon.com/library/news/unboxed-ai-announcement", "note": "Built into Seller Central, photo to lifestyle image/video", "categories": ["product"] },
+    { "name": "Google Product Studio", "url": "https://www.retaildive.com/news/google-product-studio-imagery-generative-artificial-intelligence/651113/", "note": "Free text-to-image product staging in Merchant Center / Shopify", "categories": ["product"] },
+    { "name": "Adobe Firefly / Photoshop Generative Fill", "url": "https://firefly.adobe.com/", "note": "Now includes a Flux Kontext model option for in-context edits", "categories": ["product", "fashion"] }
+  ],
+  "campaigns": [
+    {
+      "brand": "Amazon",
+      "title": "The clearest citable performance number in this category",
+      "body": "No single DTC brand campaign in product photography surfaced with independently verifiable results. The strongest citable case is Amazon's own reported figure: advertisers using its AI Image Generator saw roughly 5 percent more sales.",
+      "sources": [{ "label": "Amazon Ads", "url": "https://advertising.amazon.com/library/news/unboxed-ai-announcement" }]
+    }
+  ],
+  "controversies": [
+    {
+      "title": "Product truthfulness",
+      "body": "AI-generated scenes risk misrepresenting a physical product's real scale, texture, or color, a live version of the same false-advertising concern found in the food category's AI menu photos.",
+      "sources": []
+    },
+    {
+      "title": "Commoditized packshot work is the most automated segment",
+      "body": "General industry commentary consistently frames the shift as: photographers who only shot flat packshots are repositioning as CGI or AI art directors, while concept-driven hero photography stays a human specialty.",
+      "flagged": true,
+      "sources": []
+    }
+  ]
+}

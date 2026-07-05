@@ -1,0 +1,52 @@
+{
+  "stats": [
+    { "num": "58%", "label": "of photographers report having lost work to generative AI (Zenfolio 2026 survey, via PetaPixel, Jan 2026)" },
+    { "num": "32.2%", "label": "already had AI in their regular workflow as of the 2025 survey, mostly culling/masking/retouching, not full generation (Zenfolio 2025)" },
+    { "num": "Aug 2, 2026", "label": "EU AI Act Article 50 transparency obligations take effect: generative outputs need machine-readable marking" }
+  ],
+  "synthesis": [
+    "2025 was the year AI imagery went from experiment to infrastructure, built directly into Google Ads, Amazon Seller Central, Uber Eats, Photoshop, and Shopify apps, while also the year public backlash got teeth, from Guess/Vogue to the Coca-Cola Christmas ad to Instagram's AI slop crisis.",
+    "The same pattern repeats across all five categories: low-budget, high-volume, catalog and menu and headshot work is being absorbed by AI first, while high-concept campaign, editorial, and identity work stays human-led but increasingly AI-assisted.",
+    "Disclosure is moving from voluntary ethics to legal and platform requirement, C2PA labeling, the EU AI Act, New York's Fashion Workers Act, so knowing how to disclose well is now a professional skill. Guess/Vogue is the cautionary tale; H&M's in-image \"digital twin\" label is the better-practice example.",
+    "The authenticity premium is the photographer's strongest counter-position: platforms and audiences are actively rewarding verifiably real, unpolished imagery precisely because AI polish has become cheap and everywhere."
+  ],
+  "platformPolicy": [
+    {
+      "title": "Meta: AI Info labels",
+      "body": "Instagram/Facebook/Threads label content as \"Made with AI\" using C2PA/IPTC metadata detection plus a manual self-disclosure toggle. Undisclosed AI content risks automatic labeling or reach penalties.",
+      "sources": [{ "label": "Meta Transparency Center", "url": "https://transparency.meta.com/governance/tracking-impact/labeling-ai-content/" }]
+    },
+    {
+      "title": "TikTok: Content Credentials",
+      "body": "Integrated C2PA Content Credentials and requires user labeling of synthetic or manipulated content, run through multiple detection layers.",
+      "sources": [{ "label": "Billo", "url": "https://billo.app/blog/ai-labeling/" }]
+    },
+    {
+      "title": "Pinterest: user-facing AI filters",
+      "body": "Shipped per-pin AI controls and \"see fewer AI pins\" filters directly in response to AI slop backlash from users.",
+      "sources": [{ "label": "TechBuzz", "url": "https://www.techbuzz.ai/articles/pinterest-launches-ai-content-filters-as-slop-backlash-grows" }]
+    },
+    {
+      "title": "EU AI Act Article 50",
+      "body": "From August 2, 2026, generative AI outputs distributed in the EU need machine-readable marking, and deepfakes need disclosure at first exposure. A Code of Practice on Transparency of AI-Generated Content is being finalized alongside it.",
+      "sources": [{ "label": "EU AI Act explorer", "url": "https://artificialintelligenceact.eu/article/50/" }]
+    },
+    {
+      "title": "New York Fashion Workers Act",
+      "body": "Effective June 19, 2025: clients must get clear written consent (scope, purpose, pay, duration) before creating or using a model's digital replica. The first US law aimed squarely at commercial-imagery likeness rights.",
+      "sources": [{ "label": "NY DOL FAQ", "url": "https://dol.ny.gov/new-york-state-fashion-workers-act-faqs" }]
+    }
+  ],
+  "timeline": [
+    { "date": "Jan 2025", "release": "Getty + Shutterstock merger announced (~$3.7B)", "relevance": "Stock industry consolidation under AI pressure" },
+    { "date": "Mar 25, 2025", "release": "OpenAI GPT-4o native image generation", "relevance": "Text rendering, brand-guideline adherence in ChatGPT" },
+    { "date": "Apr 3, 2025", "release": "Midjourney V7", "relevance": "First new Midjourney model in nearly a year" },
+    { "date": "Jun 26, 2025", "release": "Google Doppl", "relevance": "Consumer virtual try-on app" },
+    { "date": "Sep 2025", "release": "FLUX.1 Kontext in Photoshop beta", "relevance": "In-context editing enters Adobe's workflow" },
+    { "date": "Aug 26, 2025", "release": "Google Gemini 2.5 Flash Image (Nano Banana)", "relevance": "Character consistency, conversational editing, viral portrait trends" },
+    { "date": "Oct 28, 2025", "release": "Adobe Firefly Image Model 5", "relevance": "Native ~4MP, layers, custom models for commercially-safe pipelines" },
+    { "date": "Nov 2025", "release": "Google Nano Banana Pro (Gemini 3 Pro Image)", "relevance": "Up to 4K, legible multilingual text, rolled into Google Ads" },
+    { "date": "Nov-Dec 2025", "release": "FLUX.2 family (Pro/Flex/Dev/Klein/max)", "relevance": "Multi-reference editing, open-weights option" },
+    { "date": "Feb 26, 2026", "release": "Google Nano Banana 2", "relevance": "Faster generation, realism at 4K" }
+  ]
+}

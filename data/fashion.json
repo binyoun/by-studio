@@ -1,0 +1,84 @@
+{
+  "category": "Fashion",
+  "intro": "Fashion has produced the two clearest case studies for teaching disclosure: H&M's compensated, clearly-labeled digital twins, and Guess's technically-disclosed-but-effectively-hidden AI models in Vogue. It's also the category with the first real law protecting model likeness rights.",
+  "trends": [
+    {
+      "title": "Digital twins of real, compensated models",
+      "body": "H&M announced in March 2025 it would create 30 AI digital twins of real models, who retain rights and compensation for their twin's use. Its first denim campaign images, released July 2025, each carry an explicit digital twin label.",
+      "sources": [
+        { "label": "CNN", "url": "https://www.cnn.com/2025/03/28/style/h-and-m-ai-models-intl-scli/index.html" },
+        { "label": "PetaPixel", "url": "https://petapixel.com/2025/07/08/hm-unveils-ai-generated-models-that-wont-replace-photography/" }
+      ]
+    },
+    {
+      "title": "Fully AI-generated campaigns draw direct criticism",
+      "body": "Mango ran an entirely AI-generated campaign, Sunset Dream, for its teen line, and drew false-advertising and job-loss criticism in the same news cycle as H&M's more disclosed approach.",
+      "sources": [{ "label": "CNN", "url": "https://www.cnn.com/2025/03/28/style/h-and-m-ai-models-intl-scli/index.html" }]
+    },
+    {
+      "title": "AI on-model imagery reaches e-commerce SMBs",
+      "body": "Botika turns flat-lay or packshot photos into on-model imagery for small fashion brands, raised an 8 million dollar seed round in January 2025, and claims up to 90 percent photoshoot cost reduction through a Shopify app used by thousands of brands.",
+      "sources": [{ "label": "PRWeb", "url": "https://www.prweb.com/releases/botika-transforms-fashion-photography-with-launch-of-ai-generated-fashion-model-mobile-app-secures-8-million-in-seed-funding-302352368.html" }]
+    },
+    {
+      "title": "Consumer virtual try-on goes mainstream",
+      "body": "Google launched Doppl, a virtual try-on app, in June 2025, then rolled try-on into Google Shopping and Search, expanded to shoes and more countries by October 2025, and added selfie-based try-on in December 2025.",
+      "sources": [
+        { "label": "Engadget", "url": "https://www.engadget.com/ai/googles-new-ai-app-doppl-lets-you-try-on-outfits-virtually-120014003.html" },
+        { "label": "TechCrunch", "url": "https://techcrunch.com/2025/12/11/googles-ai-try-on-feature-for-clothes-now-works-with-just-a-selfie/" }
+      ]
+    },
+    {
+      "title": "AI reaches platform scale inside a major retailer",
+      "body": "Zalando reports that AI-generated visuals make up roughly 70 percent of its editorial campaign imagery, cutting production time from 6-8 weeks to 3-4 days and costs by around 90 percent, built on a digital-twin pipeline developed with ORENDT Studios.",
+      "sources": [{ "label": "Reuters via Yahoo Finance", "url": "https://finance.yahoo.com/news/zalando-uses-ai-speed-marketing-070427441.html" }]
+    }
+  ],
+  "tools": [
+    { "name": "Botika", "url": "https://botika.io/", "note": "Flat-lay/packshot to on-model AI imagery for e-commerce", "categories": ["fashion"] },
+    { "name": "Google Doppl", "url": "https://www.engadget.com/ai/googles-new-ai-app-doppl-lets-you-try-on-outfits-virtually-120014003.html", "note": "Consumer virtual try-on", "categories": ["fashion"] },
+    { "name": "Adobe Firefly", "url": "https://firefly.adobe.com/", "note": "Also used for fashion campaign compositing", "categories": ["fashion", "product", "lifestyle"] }
+  ],
+  "campaigns": [
+    {
+      "brand": "Guess (Vogue US, Aug 2025)",
+      "title": "Technically disclosed, effectively hidden",
+      "body": "Guess ran an ad in Vogue's August 2025 issue built with two fully AI-generated models, made by London agency Seraphinne Vallora, disclosed only with a tiny credit line. It drew major reader backlash over how invisible the labeling was, even though the underlying workflow still involved a week of photographing a real model in Guess clothing as reference.",
+      "sources": [
+        { "label": "CNN", "url": "https://www.cnn.com/2025/07/31/style/vogue-ai-models-guess-campaign" },
+        { "label": "Forbes", "url": "https://www.forbes.com/sites/moinroberts-islam/2025/07/29/vogue-erupts-ai-generated-models-spark-reader-fury-and-industry-panic/" }
+      ]
+    },
+    {
+      "brand": "H&M",
+      "title": "The better-practice contrast case",
+      "body": "H&M's digital-twin denim campaign is the direct counter-example to Guess: real, compensated models, and an explicit in-image label rather than a buried credit line.",
+      "sources": [{ "label": "PetaPixel", "url": "https://petapixel.com/2025/07/08/hm-unveils-ai-generated-models-that-wont-replace-photography/" }]
+    }
+  ],
+  "controversies": [
+    {
+      "title": "Job displacement beyond the models themselves",
+      "body": "Critics note that photographers, makeup artists, hairstylists, and stylists all lose work when a campaign goes fully synthetic, not just the modeling talent.",
+      "sources": [{ "label": "CNN", "url": "https://www.cnn.com/2025/03/28/style/h-and-m-ai-models-intl-scli/index.html" }]
+    },
+    {
+      "title": "Disclosure size and placement",
+      "body": "The Guess/Vogue case is the canonical example of disclosure that technically exists but is practically invisible to the reader.",
+      "sources": [{ "label": "DesignRush", "url": "https://news.designrush.com/guess-faces-backlash-over-ai-models-in-vogue-campaign" }]
+    },
+    {
+      "title": "Model likeness rights become law",
+      "body": "The New York Fashion Workers Act, effective June 19, 2025, requires clients to get clear written consent, covering scope, purpose, pay, and duration, before creating or using a model's digital replica, with damages up to 300 percent for willful violations. The first US law aimed squarely at this exact issue.",
+      "sources": [
+        { "label": "NY DOL FAQ", "url": "https://dol.ny.gov/new-york-state-fashion-workers-act-faqs" },
+        { "label": "The Fashion Law", "url": "https://www.thefashionlaw.com/the-grace-period-is-over-for-new-yorks-fashion-workers-act/" }
+      ]
+    },
+    {
+      "title": "Body-image concerns about idealized synthetic models",
+      "body": "Coverage of the Guess/Vogue backlash repeatedly raises concern about AI models defaulting to unrealistically idealized proportions and features.",
+      "sources": [{ "label": "Forbes", "url": "https://www.forbes.com/sites/moinroberts-islam/2025/07/29/vogue-erupts-ai-generated-models-spark-reader-fury-and-industry-panic/" }]
+    }
+  ]
+}

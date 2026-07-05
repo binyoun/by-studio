@@ -1,0 +1,73 @@
+{
+  "category": "Food",
+  "intro": "Food is where the enhancement-versus-generation line is sharpest: improving a real photo is broadly accepted, generating a dish from nothing gets called out as false advertising in public, fast. The Forkable case below is the anchor story for this category.",
+  "trends": [
+    {
+      "title": "Delivery platforms deploy AI photo enhancement at scale",
+      "body": "Uber Eats announced AI tools that enhance low-quality restaurant photos, lighting, resolution, framing, even re-plating a takeout-box shot onto a proper dish, plus AI-written menu descriptions. DoorDash launched comparable AI photo tools in April 2025.",
+      "sources": [
+        { "label": "PYMNTS", "url": "https://www.pymnts.com/artificial-intelligence-2/2025/uber-eats-debuts-ai-features-for-restaurants/" },
+        { "label": "Today.com", "url": "https://www.today.com/food/news/food-delivery-ai-photos-rcna259748" }
+      ]
+    },
+    {
+      "title": "Enhancement is tolerated, generation is not",
+      "body": "Reporting on the delivery-platform rollout draws a consistent line: improving a photo of a real dish is broadly accepted by diners, but generating the dish from scratch triggers false-advertising accusations on social media almost immediately.",
+      "sources": [{ "label": "Today.com", "url": "https://www.today.com/food/news/food-delivery-ai-photos-rcna259748" }]
+    },
+    {
+      "title": "A niche SaaS layer sells generated menu photography directly to restaurants",
+      "body": "Tools like FoodShot AI, FoodPhoto.ai, and MenuPhotoAI sell generated or enhanced menu imagery to restaurants that can't afford a proper food photography shoot.",
+      "sources": [{ "label": "FoodShot", "url": "https://foodshot.ai/" }]
+    },
+    {
+      "title": "Fully AI-generated restaurant advertising has arrived",
+      "body": "Restaurant Business reported that Teriyaki Madness ran an ad campaign built almost entirely with AI, generated actors, backdrops, and voiceover, with the food itself shot for real, described as a fast-casual first.",
+      "sources": [{ "label": "Restaurant Business", "url": "https://www.restaurantbusinessonline.com/marketing/here-come-ai-generated-restaurant-ads" }]
+    },
+    {
+      "title": "A claimed collapse in stock food photography sales",
+      "body": "A single non-mainstream analysis claims zero traditional food photographs made Adobe Stock's top-seller lists between April and August 2025, with roughly 91 percent of top-selling food imagery now AI-made. This is a single, non-mainstream source and should be treated as indicative at most.",
+      "flagged": true,
+      "sources": [{ "label": "Microstock Insights", "url": "https://medium.com/@microstockinsights/food-photography-is-dead-91-now-made-by-ai-part-2-premium-analysis-d6845b979c14" }]
+    }
+  ],
+  "tools": [
+    { "name": "Uber Eats AI photo tools", "url": "https://www.pymnts.com/artificial-intelligence-2/2025/uber-eats-debuts-ai-features-for-restaurants/", "note": "Built-in enhancement + re-plating for merchant photos", "categories": ["food"] },
+    { "name": "FoodShot AI", "url": "https://foodshot.ai/", "note": "Generated/enhanced restaurant menu photography", "categories": ["food"] },
+    { "name": "Photoroom", "url": "https://www.photoroom.com/blog/ai-product-images-food-delivery", "note": "Standardized food-delivery catalog images", "categories": ["food", "product"] },
+    { "name": "Typeface", "url": "https://www.typeface.ai/", "note": "AI imagery for food and beverage brands", "categories": ["food"] }
+  ],
+  "campaigns": [
+    {
+      "brand": "Forkable",
+      "title": "Quietly replaced real restaurant photos sitewide, got caught, reverted",
+      "body": "The San Francisco catering platform Forkable swapped real restaurant photos for AI-generated ones across its site without telling the restaurants involved. Owners found out after launch; a co-founder later admitted the company moved too quickly and reverted to real photography. The clearest cautionary case in this category.",
+      "sources": [{ "label": "Today.com", "url": "https://www.today.com/food/news/food-delivery-ai-photos-rcna259748" }]
+    },
+    {
+      "brand": "Burger King / Heinz",
+      "title": "Brand-side AI food imagery in marketing",
+      "body": "Burger King's Million Dollar Whopper campaign and Heinz's earlier AI Ketchup campaign both used AI-generated imagery in social and poster creative as a deliberate marketing device rather than a cost-saving substitution.",
+      "sources": [{ "label": "StoryChief roundup", "url": "https://storychief.io/blog/ai-marketing-campaigns" }]
+    }
+  ],
+  "controversies": [
+    {
+      "title": "False advertising accusations",
+      "body": "Diners calling out generated menu photos as misrepresentation is now a recurring social-media story, not an edge case.",
+      "sources": [{ "label": "Today.com", "url": "https://www.today.com/food/news/food-delivery-ai-photos-rcna259748" }]
+    },
+    {
+      "title": "Platforms police AI in both directions",
+      "body": "Uber Eats asks customers not to submit AI-generated photos to its own community-photo program, while DoorDash permanently banned a driver in December 2025 for submitting an AI-faked proof-of-delivery photo.",
+      "sources": [{ "label": "Today.com", "url": "https://www.today.com/food/news/food-delivery-ai-photos-rcna259748" }]
+    },
+    {
+      "title": "The wider ecosystem loses work too",
+      "body": "Food stylists, prop stylists, and suppliers are affected alongside photographers when a shoot is skipped entirely, though high-end editorial and cookbook work remains human-led for now. Source domain has since gone offline, treat as general industry commentary rather than a live citation.",
+      "flagged": true,
+      "sources": []
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "term": "Nano Banana",
+    "definition": "Nickname for Google's Gemini 2.5 Flash Image model (later Nano Banana Pro / Nano Banana 2), known for unusually consistent face and character rendering across edits, which is what made it the engine behind several viral 2025 portrait trends."
+  },
+  {
+    "term": "Digital twin",
+    "definition": "An AI-generated stand-in for a real person, built from their likeness, used in place of new photography of them. H&M's model program compensates the real model for every use of their twin, which is the industry's clearest current example of doing this with consent."
+  },
+  {
+    "term": "C2PA / Content Credentials",
+    "definition": "An industry standard (Coalition for Content Provenance and Authenticity) for embedding tamper-evident metadata into a file showing how it was created or edited, including whether AI was involved. Increasingly the mechanism platforms use to auto-label AI content rather than relying on self-disclosure alone."
+  },
+  {
+    "term": "AI slop",
+    "definition": "Informal term for low-effort, mass-produced AI-generated content flooding a feed or platform. Became a major 2025 flashpoint on Instagram and Pinterest, both of which shipped user-facing controls in direct response."
+  },
+  {
+    "term": "In-context editing (Kontext)",
+    "definition": "A class of image model, exemplified by Flux.1/Flux.2 Kontext, that edits an existing image based on a text instruction while preserving everything not explicitly changed, rather than regenerating the whole image from a prompt. This is what made prompt-based product compositing practical inside tools like Photoshop."
+  },
+  {
+    "term": "Virtual influencer",
+    "definition": "A fully synthetic, computer-generated persona that posts and partners with brands like a human influencer would. Distinct from a digital twin, since there's no real person behind the persona at all."
+  },
+  {
+    "term": "UGC-style ad",
+    "definition": "An advertisement styled to look like ordinary user-generated content (a casual selfie-style video or photo) rather than polished brand creative, now frequently AI-generated at scale to mimic that same authentic, unproduced look."
+  },
+  {
+    "term": "Authenticity premium",
+    "definition": "The countervailing market value placed on content that reads as verifiably real and unpolished, precisely because AI has made polished, generated imagery cheap and abundant. The core tension underlying the lifestyle category."
+  }
+]

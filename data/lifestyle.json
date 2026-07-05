@@ -1,0 +1,66 @@
+{
+  "category": "Lifestyle",
+  "intro": "Lifestyle is the category where AI and the authenticity backlash collide most directly: the same technology generating infinite polished stock imagery is also what's driving audiences and platforms back toward visibly real, unpolished content.",
+  "trends": [
+    {
+      "title": "AI is eating generic lifestyle stock photography",
+      "body": "Getty and Shutterstock announced a roughly 3.7 billion dollar merger in January 2025, widely read as consolidation under AI pressure. Both companies are building AI generation into their own products, pose variation, background extension, while offering the legal indemnity open generators can't.",
+      "sources": [
+        { "label": "London Daily", "url": "https://londondaily.com/getty-and-shutterstock-unite-in-ai-driven-era-a-new-chapter-for-stock-photography" },
+        { "label": "Foster Fletcher", "url": "https://fosterfletcher.com/under-siege-can-getty-and-shutterstock-survive-the-rise-of-generative-ai/" }
+      ]
+    },
+    {
+      "title": "AI UGC-style ads go mainstream in performance marketing",
+      "body": "Brands generate authentic-looking, user-generated-content-style creative at scale for TikTok, Instagram, and Meta ads. Hybrid workflows, AI variants of a top-performing human UGC ad, are now standard practice.",
+      "sources": [{ "label": "inBeat Agency", "url": "https://inbeat.agency/blog/ai-ugc-ads" }]
+    },
+    {
+      "title": "Virtual influencers peak, then correct",
+      "body": "A 2025 report claimed virtual-influencer posts get roughly 3x the engagement of human equivalents, but other coverage reports brand partnerships with virtual influencers fell nearly 30 percent over the same year. Both figures are second-hand and should be verified before quoting.",
+      "flagged": true,
+      "sources": [
+        { "label": "Stormy AI", "url": "https://stormy.ai/blog/ai-influencer-marketing-trends-2025" },
+        { "label": "Sophie Bakalar", "url": "https://sophiebakalar.substack.com/p/what-if-consumers-hate-ai-content" }
+      ]
+    },
+    {
+      "title": "The authenticity counter-trend",
+      "body": "Stock buyers and social audiences are visibly shifting toward unpolished, UGC-looking, real imagery, precisely because AI polish has become cheap and ubiquitous. This tension is arguably the central teaching point of the lifestyle category.",
+      "sources": [{ "label": "Sophie Bakalar", "url": "https://sophiebakalar.substack.com/p/what-if-consumers-hate-ai-content" }]
+    }
+  ],
+  "tools": [
+    { "name": "Adobe Firefly", "url": "https://firefly.adobe.com/", "note": "Commercially-licensed generation, integrated into Creative Cloud", "categories": ["lifestyle", "product", "fashion"] },
+    { "name": "Shutterstock AI (OpenAI partnership)", "url": "https://fosterfletcher.com/under-siege-can-getty-and-shutterstock-survive-the-rise-of-generative-ai/", "note": "Licensed generative stock imagery", "categories": ["lifestyle"] },
+    { "name": "Getty AI generator", "url": "https://fosterfletcher.com/under-siege-can-getty-and-shutterstock-survive-the-rise-of-generative-ai/", "note": "Licensed, commercially-safe generation with indemnity", "categories": ["lifestyle"] }
+  ],
+  "campaigns": [
+    {
+      "brand": "Coca-Cola",
+      "title": "A second AI Christmas ad, and a second round of backlash",
+      "body": "Coca-Cola's November 2025 AI-generated Christmas caravan ad, made with AI studios Silverside and Secret Level, was the most talked-about holiday ad on social per Campaign US, but drew only around 37 percent positive sentiment, with recurring reactions of soulless, creepy, and calls to boycott.",
+      "sources": [
+        { "label": "Forbes", "url": "https://www.forbes.com/sites/danidiplacido/2025/11/04/coca-cola-sparks-backlash-with-ai-generated-christmas-ad-again/" },
+        { "label": "Campaign US", "url": "https://www.campaignlive.com/article/coca-colas-ai-christmas-ad-most-talked-about-social/1940473" }
+      ]
+    }
+  ],
+  "controversies": [
+    {
+      "title": "The Instagram AI slop crisis",
+      "body": "Instagram head Adam Mosseri faced creator backlash in 2025 over failing to protect feeds from AI slop; Instagram reportedly adjusted its ranking to penalize highly polished synthetic content in response.",
+      "sources": [{ "label": "Hello Partner", "url": "https://hellopartner.com/2026/01/02/head-of-instagram-faces-huge-backlash-from-influencers-claiming-the-platform-failed-to-protect-them-against-ai-slop-in-2025/" }]
+    },
+    {
+      "title": "Pinterest ships user-facing AI filters",
+      "body": "Pinterest launched per-pin AI content controls and a 'see fewer AI pins' option directly in response to the same slop backlash.",
+      "sources": [{ "label": "TechBuzz", "url": "https://www.techbuzz.ai/articles/pinterest-launches-ai-content-filters-as-slop-backlash-grows" }]
+    },
+    {
+      "title": "Trust erosion",
+      "body": "Coverage of the slop backlash consistently reports the same underlying effect: users become less willing to share posts once they can no longer reliably tell real from generated.",
+      "sources": []
+    }
+  ]
+}

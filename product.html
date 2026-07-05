@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Loading — Synthetic Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<nav class="top">
+  <a class="brand" href="index.html">Synthetic <span class="accent">Studio</span></a>
+  <div class="links">
+    <a href="index.html">overview</a>
+    <a href="portrait.html">portrait</a>
+    <a href="product.html" class="active">product</a>
+    <a href="food.html">food</a>
+    <a href="lifestyle.html">lifestyle</a>
+    <a href="fashion.html">fashion</a>    <a href="tools.html">tools</a>
+    <a href="glossary.html">glossary</a>
+  </div>
+</nav>
+
+<header class="page">
+  <div class="mono eyebrow">02 &middot; ai commercial photography</div>
+  <h1 id="cat-title">Loading&hellip;</h1>
+  <p class="intro" id="cat-intro"></p>
+</header>
+
+<main>
+  <section class="block">
+    <h2>trends</h2>
+    <div id="trends"></div>
+  </section>
+
+  <section class="block">
+    <h2>tools &amp; platforms</h2>
+    <div id="tools"></div>
+  </section>
+
+  <section class="block">
+    <h2>campaigns &amp; cases</h2>
+    <div id="campaigns"></div>
+  </section>
+
+  <section class="block">
+    <h2>controversy &amp; tension</h2>
+    <div id="controversies"></div>
+  </section>
+</main>
+
+<footer class="site">
+  built for students, not clients &middot; sources in <a href="https://github.com/binyoun/synthetic-studio" target="_blank" rel="noopener">the repo</a> &middot; no em-dashes, on principle
+</footer>
+
+<script src="js/render.js"></script>
+<script>loadCategoryPage("data/product.json");</script>
+</body>
+</html>

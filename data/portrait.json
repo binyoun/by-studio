@@ -1,0 +1,67 @@
+{
+  "category": "Portrait",
+  "intro": "AI is normalizing the corporate headshot as a text prompt, while it also folds quietly into professional retouching pipelines and drives viral portrait aesthetics that reset what clients expect a portrait to look like and cost.",
+  "trends": [
+    {
+      "title": "AI headshot generators normalize for LinkedIn and job hunting",
+      "body": "Services like HeadshotPro, Aragon AI, InstaHeadshots, and PhotoPacksAI produce a set of professional-looking headshots in minutes for under $50. Adoption skews Gen Z and millennial, and Canva has folded the feature into its own product.",
+      "sources": [
+        { "label": "CNBC", "url": "https://www.cnbc.com/2025/10/18/jobs-search-ai-resume-cv-headshots.html" },
+        { "label": "TechBuzz", "url": "https://www.techbuzz.ai/articles/ai-headshots-flood-linkedin-as-job-market-gets-tougher" }
+      ]
+    },
+    {
+      "title": "AI retouching becomes the default pro workflow, not a replacement",
+      "body": "Aftershoot's AI Retouching (skin texture, blemish removal, glare, object removal) shipped free through September 2025 before moving to paid plans, and by its 2026 update markets itself as a full cull-edit-retouch-deliver pipeline for working portrait photographers.",
+      "sources": [
+        { "label": "Photofocus", "url": "https://photofocus.com/news/aftershoot-introduces-the-early-release-of-ai-retouching-to-streamline-portrait-workflows/" },
+        { "label": "Fstoppers", "url": "https://fstoppers.com/software/aftershoot-just-became-entire-ai-photography-workflow-903026" }
+      ]
+    },
+    {
+      "title": "Viral consumer AI portraits reset the aesthetic bar",
+      "body": "Google's Gemini 2.5 Flash Image, nicknamed Nano Banana, fueled the 3D-figurine selfie trend and the Bollywood-style vintage saree portrait trend across Instagram in September 2025, on the strength of unusually consistent face rendering.",
+      "sources": [
+        { "label": "Business Standard", "url": "https://www.business-standard.com/technology/tech-news/google-gemini-ai-photo-generator-nano-banana-saree-edits-safety-concerns-125091500880_1.html" },
+        { "label": "Free Press Journal", "url": "https://www.freepressjournal.in/tech/google-gemini-nano-banana-ai-saree-trend-goes-viral-on-instagram-step-by-step-guide-on-how-to-try-it" }
+      ]
+    },
+    {
+      "title": "Traditional portrait work repositions upmarket",
+      "body": "General industry commentary frames the open question as whether traditional headshot photography gets relegated to executive portraits and special occasions, as everyday headshot demand gets absorbed by generators.",
+      "flagged": true,
+      "sources": []
+    }
+  ],
+  "tools": [
+    { "name": "HeadshotPro", "url": "https://www.headshotpro.com/", "note": "AI corporate headshots from selfies", "categories": ["portrait"] },
+    { "name": "Aragon AI", "url": "https://www.aragon.ai/", "note": "AI headshot generator", "categories": ["portrait"] },
+    { "name": "Aftershoot", "url": "https://aftershoot.com/", "note": "AI culling, editing, and retouching for working photographers", "categories": ["portrait"] },
+    { "name": "Google Gemini (Nano Banana)", "url": "https://gemini.google.com/", "note": "Conversational image editing behind the viral portrait trends", "categories": ["portrait", "lifestyle"] }
+  ],
+  "campaigns": [
+    {
+      "brand": "Job seekers, collectively",
+      "title": "The AI headshot did not start with a brand, it started with candidates",
+      "body": "Unlike the other four categories, portrait's clearest AI-adoption story is not a brand campaign but a labor-market one: individual job seekers adopting AI headshots faster than any studio or platform pushed them to.",
+      "sources": [{ "label": "CNBC", "url": "https://www.cnbc.com/2025/10/18/jobs-search-ai-resume-cv-headshots.html" }]
+    }
+  ],
+  "controversies": [
+    {
+      "title": "Authenticity in hiring",
+      "body": "Recruiters flag overly smooth AI portraits as a deception risk, worried the photo no longer represents how the candidate actually looks in person.",
+      "sources": [{ "label": "CNBC", "url": "https://www.cnbc.com/2025/10/18/jobs-search-ai-resume-cv-headshots.html" }]
+    },
+    {
+      "title": "Likeness and privacy leakage",
+      "body": "During the Nano Banana saree trend, one user reported a generated image reproducing a real mole not visible in their source photo. Google called the identifying marker coincidental.",
+      "sources": [{ "label": "Business Standard", "url": "https://www.business-standard.com/technology/tech-news/google-gemini-ai-photo-generator-nano-banana-saree-edits-safety-concerns-125091500880_1.html" }]
+    },
+    {
+      "title": "The clearest labor displacement story of the five categories",
+      "body": "Entry-level headshot work is the most directly substituted segment across all five categories studied here, a pattern the 2026 Zenfolio industry survey (58% of photographers report losing work to generative AI) backs with hard numbers.",
+      "sources": [{ "label": "PetaPixel", "url": "https://petapixel.com/2026/01/30/58-of-photographers-have-lost-work-to-generative-ai-survey/" }]
+    }
+  ]
+}
