@@ -65,6 +65,7 @@ section.block h2 {
   letter-spacing: .1em; text-transform: uppercase; color: var(--accent);
   border: 1px solid var(--accent); padding: .15rem .45rem;
 }
+.card .tag.mod { background: var(--accent); color: var(--bg); }
 .card .sources {
   margin-top: auto; padding-top: .6rem; border-top: 1px solid var(--line);
   display: flex; flex-wrap: wrap; gap: .5rem;

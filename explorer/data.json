@@ -3,225 +3,532 @@
     "name": "Henri Cartier-Bresson",
     "years": "1908-2004",
     "nationality": "French",
-    "genres": ["Street"],
-    "themes": ["Decisive moment"],
+    "genres": [
+      "Street"
+    ],
+    "themes": [
+      "Decisive moment"
+    ],
     "bio": "Coined the idea of the decisive moment, the instant when a scene's elements align into a complete composition, and spent decades photographing that instant on the street with a small, quiet 35mm camera rather than a tripod-mounted studio setup. A founding member of Magnum Photos, the cooperative agency that professionalized independent photojournalism.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Henri_Cartier-Bresson" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Henri_Cartier-Bresson"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Diane Arbus",
     "years": "1923-1971",
     "nationality": "American",
-    "genres": ["Portrait"],
-    "themes": ["Identity"],
+    "genres": [
+      "Portrait"
+    ],
+    "themes": [
+      "Identity"
+    ],
     "bio": "Photographed people at the margins of mainstream attention, twins, circus performers, suburban families, with a direct, unflinching square-format style that refused to soften the encounter. Her work reframed the portrait as a confrontation between subject and viewer rather than a flattering record.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Diane_Arbus" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Diane_Arbus"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Ansel Adams",
     "years": "1902-1984",
     "nationality": "American",
-    "genres": ["Landscape"],
-    "themes": ["Nature and environment"],
+    "genres": [
+      "Landscape"
+    ],
+    "themes": [
+      "Nature and environment"
+    ],
     "bio": "Photographed the American West, most famously Yosemite, in dramatic black and white, and co-developed the Zone System, a method for precisely controlling exposure and print tonality that remains a foundation of technical photographic craft. Also a lifelong conservationist whose images helped build public support for US national parks.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Ansel_Adams" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ansel_Adams"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Irving Penn",
     "years": "1917-2009",
     "nationality": "American",
-    "genres": ["Fashion", "Portrait"],
-    "themes": ["Modernism"],
+    "genres": [
+      "Fashion",
+      "Portrait"
+    ],
+    "themes": [
+      "Modernism"
+    ],
     "bio": "Defined a spare, plain-backdrop studio style for Vogue that stripped fashion and portrait photography down to gesture, light, and the subject alone, an aesthetic still visible in most studio fashion photography today. Also photographed still life, worn objects, and food with the same exacting formal control he brought to portraits of the famous.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Irving_Penn" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Irving_Penn"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Annie Leibovitz",
     "years": "b.1949",
     "nationality": "American",
-    "genres": ["Portrait"],
-    "themes": ["Staged narrative"],
+    "genres": [
+      "Portrait"
+    ],
+    "themes": [
+      "Staged narrative"
+    ],
     "bio": "Built her career at Rolling Stone and later Vanity Fair on elaborately staged, conceptual celebrity portraits, turning the sitting into a small production with costume, set, and narrative rather than a straightforward likeness. Among the most widely recognized living portrait photographers, for both magazine and advertising work.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Annie_Leibovitz" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Annie_Leibovitz"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Sebastiao Salgado",
     "years": "b.1944",
     "nationality": "Brazilian",
-    "genres": ["Documentary"],
-    "themes": ["Social documentary"],
+    "genres": [
+      "Documentary"
+    ],
+    "themes": [
+      "Social documentary"
+    ],
     "bio": "Spent decades on long-form black and white documentary projects, laborers, migration, the remaining unspoiled corners of the planet, photographed with an epic visual style that treats working people with the same formal gravity traditionally reserved for portraits of the powerful. Trained originally as an economist before turning to photography full time.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Sebasti%C3%A3o_Salgado" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sebasti%C3%A3o_Salgado"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Cindy Sherman",
     "years": "b.1954",
     "nationality": "American",
-    "genres": ["Portrait"],
-    "themes": ["Identity"],
+    "genres": [
+      "Portrait"
+    ],
+    "themes": [
+      "Identity"
+    ],
     "bio": "Works almost exclusively as her own subject, photographing herself in costume and makeup as invented characters, film stills, society portraits, clowns, to question who is really being seen in a portrait: the sitter, the photographer, or a constructed type. Her work sits at the boundary between photography and performance art.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Cindy_Sherman" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cindy_Sherman"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Nan Goldin",
     "years": "b.1953",
     "nationality": "American",
-    "genres": ["Lifestyle", "Documentary"],
-    "themes": ["Intimacy and family"],
+    "genres": [
+      "Lifestyle",
+      "Documentary"
+    ],
+    "themes": [
+      "Intimacy and family"
+    ],
     "bio": "Documented her own social circle, friends, lovers, chosen family, through the AIDS crisis and beyond in raw, flash-lit, diaristic images, most famously assembled as The Ballad of Sexual Dependency, treating her own life as the ongoing subject rather than photographing a community from outside it. Her unguarded style influenced how an entire generation of documentary and lifestyle photography looks.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Nan_Goldin" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nan_Goldin"
+    },
+    "type": "Photographer"
   },
   {
     "name": "William Eggleston",
     "years": "b.1939",
     "nationality": "American",
-    "genres": ["Street", "Lifestyle"],
-    "themes": ["Color and everyday life"],
+    "genres": [
+      "Street",
+      "Lifestyle"
+    ],
+    "themes": [
+      "Color and everyday life"
+    ],
     "bio": "Helped establish color photography as a serious art form at a time when the fine-art world largely dismissed it as commercial or amateur, photographing ordinary American scenes, a tricycle, a diner ceiling, a gas station, with the formal seriousness usually reserved for black and white work. His 1976 MoMA exhibition is widely credited with legitimizing color as an art medium.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/William_Eggleston" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/William_Eggleston"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Vivian Maier",
     "years": "1926-2009",
     "nationality": "American",
-    "genres": ["Street"],
-    "themes": ["Decisive moment"],
+    "genres": [
+      "Street"
+    ],
+    "themes": [
+      "Decisive moment"
+    ],
     "bio": "Worked her whole life as a nanny in Chicago and New York while secretly shooting over 100,000 street photographs on her days off, a body of work entirely unknown until a box of her negatives surfaced at auction shortly before her death. Her curious, unflinching eye for strangers on the street is now taught alongside recognized greats of the genre.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Vivian_Maier" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vivian_Maier"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Gregory Crewdson",
     "years": "b.1962",
     "nationality": "American",
-    "genres": ["Conceptual"],
-    "themes": ["Staged narrative"],
+    "genres": [
+      "Conceptual"
+    ],
+    "themes": [
+      "Staged narrative"
+    ],
     "bio": "Builds single images like film sets, full crews, lighting rigs, actors, on suburban American streets, to produce large-scale photographs that look like a still from a movie whose story is never told. The uncanny, cinematic unease of ordinary American towns at dusk is his signature.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Gregory_Crewdson" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gregory_Crewdson"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Rineke Dijkstra",
     "years": "b.1959",
     "nationality": "Dutch",
-    "genres": ["Portrait"],
-    "themes": ["Identity"],
+    "genres": [
+      "Portrait"
+    ],
+    "themes": [
+      "Identity"
+    ],
     "bio": "Photographs people, teenagers on beaches, new mothers just after giving birth, young bullfighters straight out of the ring, at moments of physical or emotional exposure, using a plain, direct, large-format approach even when shooting outdoors. Her subjects' vulnerability, rather than any staging, does the expressive work.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Rineke_Dijkstra" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rineke_Dijkstra"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Martin Parr",
     "years": "b.1952",
     "nationality": "British",
-    "genres": ["Documentary"],
-    "themes": ["Social documentary"],
+    "genres": [
+      "Documentary"
+    ],
+    "themes": [
+      "Social documentary"
+    ],
     "bio": "Photographs consumer culture, seaside tourism, supermarkets, package holidays, in oversaturated color and unflattering close flash, a style that reads as affectionate satire of ordinary leisure and consumption rather than the more solemn tone typical of documentary photography. A longtime member and former president of Magnum Photos.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Martin_Parr" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Martin_Parr"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Tim Walker",
     "years": "b.1970",
     "nationality": "British",
-    "genres": ["Fashion"],
-    "themes": ["Surrealism and fantasy"],
+    "genres": [
+      "Fashion"
+    ],
+    "themes": [
+      "Surrealism and fantasy"
+    ],
     "bio": "Builds elaborate, fantastical fashion sets, oversized props, painted backdrops, storybook staging, that push editorial fashion photography toward theatrical fantasy rather than the plain studio tradition. His work regularly appears in Vogue and has been the subject of major museum exhibitions in its own right.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Tim_Walker" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tim_Walker"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Steve McCurry",
     "years": "b.1950",
     "nationality": "American",
-    "genres": ["Documentary", "Portrait"],
-    "themes": ["Conflict and the human condition"],
+    "genres": [
+      "Documentary",
+      "Portrait"
+    ],
+    "themes": [
+      "Conflict and the human condition"
+    ],
     "bio": "Best known for Afghan Girl, the 1984 National Geographic cover portrait of a young Afghan refugee, McCurry has spent decades photographing conflict, migration, and daily life across South Asia and the Middle East in richly saturated color. His work sits at the intersection of photojournalism and portraiture.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Steve_McCurry" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Steve_McCurry"
+    },
+    "type": "Photographer"
   },
   {
     "name": "JR",
     "years": "b.1983",
     "nationality": "French",
-    "genres": ["Street"],
-    "themes": ["Activism"],
+    "genres": [
+      "Street"
+    ],
+    "themes": [
+      "Activism"
+    ],
     "bio": "Pastes massive black and white photographic portraits, often of the people directly affected by an issue, onto buildings, favela walls, and the ground itself, turning photography into public installation rather than something viewed only in a frame. His projects have spanned Kenyan slums, the Israeli-Palestinian border, and the Mexico-US border wall.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/JR_(artist)" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/JR_(artist)"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Zanele Muholi",
     "years": "b.1972",
     "nationality": "South African",
-    "genres": ["Portrait"],
-    "themes": ["Activism"],
+    "genres": [
+      "Portrait"
+    ],
+    "themes": [
+      "Activism"
+    ],
     "bio": "Photographs South Africa's Black LGBTQ+ community, and increasingly self-portraits, in high-contrast black and white, describing the work as visual activism aimed at building a public archive of Black queer life that mainstream history had largely refused to record. Widely exhibited in major international museums.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Zanele_Muholi" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zanele_Muholi"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Rinko Kawauchi",
     "years": "b.1972",
     "nationality": "Japanese",
-    "genres": ["Lifestyle"],
-    "themes": ["Color and everyday life"],
+    "genres": [
+      "Lifestyle"
+    ],
+    "themes": [
+      "Color and everyday life"
+    ],
     "bio": "Photographs small, quiet, often overlooked moments, light through a window, a child's hand, in soft, pale color, treating the ordinary domestic world as quietly remarkable rather than mundane. Her diaristic, poetic approach has been influential across contemporary Japanese and international lifestyle photography.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Rinko_Kawauchi" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rinko_Kawauchi"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Hiroshi Sugimoto",
     "years": "b.1948",
     "nationality": "Japanese",
-    "genres": ["Landscape", "Conceptual"],
-    "themes": ["Time and perception"],
+    "genres": [
+      "Landscape",
+      "Conceptual"
+    ],
+    "themes": [
+      "Time and perception"
+    ],
     "bio": "Best known for long-exposure seascapes, each one just sea and sky split by a single horizon line, and for photographing entire movies as a single frame by leaving the shutter open for a film's whole running time, both projects turning the camera into an instrument for making time itself visible rather than freezing an instant.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Hiroshi_Sugimoto" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hiroshi_Sugimoto"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Nick Ut",
     "years": "b.1951",
     "nationality": "Vietnamese-American",
-    "genres": ["Documentary"],
-    "themes": ["Conflict and the human condition"],
+    "genres": [
+      "Documentary"
+    ],
+    "themes": [
+      "Conflict and the human condition"
+    ],
     "bio": "An Associated Press photojournalist who, in 1972, took The Terror of War, widely known as Napalm Girl, the photograph of children fleeing a napalm attack during the Vietnam War that became one of the defining and most consequential images of that conflict, and of war photography generally. Continued working as a photojournalist for the AP for decades afterward.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Nick_Ut" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nick_Ut"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Maika Elan",
     "years": "b.1986",
     "nationality": "Vietnamese",
-    "genres": ["Documentary", "Lifestyle"],
-    "themes": ["Social documentary"],
+    "genres": [
+      "Documentary",
+      "Lifestyle"
+    ],
+    "themes": [
+      "Social documentary"
+    ],
     "bio": "Won the 2013 World Press Photo award for The Pink Choice, an intimate documentary series photographing gay couples at home in Vietnam, made at a time when LGBTQ+ visibility in Vietnamese media was still rare, treating domestic tenderness rather than protest or spectacle as the subject.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Maika_Elan" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Maika_Elan"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Rehahn",
     "years": "b.1979",
     "nationality": "French, based in Vietnam",
-    "genres": ["Portrait", "Documentary"],
-    "themes": ["Social documentary"],
+    "genres": [
+      "Portrait",
+      "Documentary"
+    ],
+    "themes": [
+      "Social documentary"
+    ],
     "bio": "A France-born photographer based in Hoi An, Vietnam, known for Precious Heritage, a long-running portrait project documenting Vietnam's ethnic minority groups and their traditional dress, undertaken in collaboration with the communities photographed and exhibited at a dedicated museum in Hoi An.",
-    "link": { "label": "Official site", "url": "https://www.rehahnphotographer.com/" }
+    "link": {
+      "label": "Official site",
+      "url": "https://www.rehahnphotographer.com/"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Alex Prager",
     "years": "b.1979",
     "nationality": "American",
-    "genres": ["Conceptual"],
-    "themes": ["Surrealism and fantasy"],
+    "genres": [
+      "Conceptual"
+    ],
+    "themes": [
+      "Surrealism and fantasy"
+    ],
     "bio": "Builds densely art-directed, cinematic scenes, crowds, disasters, solitary women in mid-century dress, that look like a frame plucked from a film that was never made, drawing on Hollywood and mid-century color palettes to build an uncanny, staged unreality out of ordinary public moments.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Alex_Prager" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alex_Prager"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Neil Leifer",
     "years": "b.1942",
     "nationality": "American",
-    "genres": ["Sports and action"],
-    "themes": ["Decisive moment"],
+    "genres": [
+      "Sports and action"
+    ],
+    "themes": [
+      "Decisive moment"
+    ],
     "bio": "Shot some of the most reproduced sports photographs of the twentieth century, most famously Muhammad Ali standing over a fallen Sonny Liston in 1965, built on the same split-second timing as street photography's decisive moment, but applied to fast, unrepeatable physical action rather than daily life.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Neil_Leifer" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neil_Leifer"
+    },
+    "type": "Photographer"
   },
   {
     "name": "Julius Shulman",
     "years": "1910-2009",
     "nationality": "American",
-    "genres": ["Architecture"],
-    "themes": ["Modernism"],
+    "genres": [
+      "Architecture"
+    ],
+    "themes": [
+      "Modernism"
+    ],
     "bio": "Photographed the Case Study Houses and mid-century modernist architecture in Los Angeles, most famously Pierre Koenig's Stahl House at twilight with two women seated inside as the city lights spread out below, images that did as much to define how the public understood and desired modernist architecture as the buildings themselves.",
-    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Julius_Shulman" }
+    "link": {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Julius_Shulman"
+    },
+    "type": "Photographer"
+  },
+  {
+    "name": "Oatly",
+    "years": "est. 1994",
+    "nationality": "Swedish",
+    "genres": ["Product", "Food"],
+    "themes": ["Branding and identity"],
+    "bio": "A Swedish oat-drink company that, since the mid-2010s under creative director John Schoolcraft, built its identity on bold, hand-lettered, black-and-white packaging that treats the carton itself as the ad: blunt copywriting, a visible design process, and deadpan humor in place of polished lifestyle photography.",
+    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Oatly" },
+    "type": "Brand"
+  },
+  {
+    "name": "Liquid Death",
+    "years": "est. 2019",
+    "nationality": "American",
+    "genres": ["Product", "Lifestyle"],
+    "themes": ["Branding and identity"],
+    "bio": "A canned water company built entirely on heavy-metal album-cover visual language and absurdist advertising, proof that a strong visual system can carry an entire category around a product, water, that has no flavor, color, or shape of its own to photograph.",
+    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Liquid_Death" },
+    "type": "Brand"
+  },
+  {
+    "name": "Chobani",
+    "years": "est. 2005",
+    "nationality": "American",
+    "genres": ["Food", "Product"],
+    "themes": ["Branding and identity"],
+    "bio": "An American yogurt company that rebranded in 2019 with the agency COLLINS, replacing clinical, clean-line dairy-aisle photography with warm, textured, editorial food imagery and hand-drawn illustration, part of a broader industry shift toward packaging that reads as farmers-market rather than laboratory.",
+    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Chobani" },
+    "type": "Brand"
+  },
+  {
+    "name": "Blue Bottle Coffee",
+    "years": "est. 2002",
+    "nationality": "American",
+    "genres": ["Food", "Lifestyle", "Product"],
+    "themes": ["Branding and identity"],
+    "bio": "A coffee company founded by James Freeman that built its visual identity around a spare, Japanese-influenced minimalism, single-origin labeling, quiet typography, uncluttered cafe design, standing apart from the louder branding typical of American coffee retail at the time.",
+    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Blue_Bottle_Coffee" },
+    "type": "Brand"
+  },
+  {
+    "name": "Magnum",
+    "years": "est. 1989",
+    "nationality": "British-Dutch (Unilever)",
+    "genres": ["Food", "Fashion"],
+    "themes": ["Branding and identity"],
+    "bio": "Unilever's ice cream brand treats its product photography with the same glossy, indulgent visual language as a luxury fashion campaign, chocolate shatter shots, slow-motion bites, gold foil wrappers, elevating an inexpensive supermarket product into an aspirational object.",
+    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Magnum_(ice_cream)" },
+    "type": "Brand"
+  },
+  {
+    "name": "Aesop",
+    "years": "est. 1987",
+    "nationality": "Australian",
+    "genres": ["Product", "Lifestyle"],
+    "themes": ["Branding and identity"],
+    "bio": "A skincare company that applies one consistent literary, apothecary-style visual identity, amber glass bottles, dense typographic labels, architect-designed stores, across every physical and packaging touchpoint, treating retail design itself as the primary visual medium rather than campaign photography.",
+    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Aesop_(cosmetics)" },
+    "type": "Brand"
+  },
+  {
+    "name": "Pentagram",
+    "years": "est. 1972",
+    "nationality": "British-American",
+    "genres": ["Product", "Lifestyle"],
+    "themes": ["Branding and identity"],
+    "bio": "The world's largest independent design consultancy, structured as a partnership of individually credited partners rather than a single house style, producing identity and visual systems work across branding, product, and editorial design for over five decades.",
+    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Pentagram" },
+    "type": "Studio"
+  },
+  {
+    "name": "Wieden+Kennedy",
+    "years": "est. 1982",
+    "nationality": "American",
+    "genres": ["Lifestyle", "Sports and action"],
+    "themes": ["Branding and identity"],
+    "bio": "An advertising agency that built Nike's Just Do It visual language and decades of its sports and lifestyle campaign imagery, known industry-wide for treating advertising as cultural production rather than straightforward product demonstration.",
+    "link": { "label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Wieden%2BKennedy" },
+    "type": "Studio"
+  },
+  {
+    "name": "Sagmeister & Walsh",
+    "years": "est. 2012",
+    "nationality": "American",
+    "genres": ["Conceptual", "Product"],
+    "themes": ["Branding and identity"],
+    "bio": "A New York design studio founded by Stefan Sagmeister and Jessica Walsh, known for provocative, conceptually driven visual identity work that treats a client's branding as a vehicle for a bigger idea rather than a neutral visual system.",
+    "link": { "label": "Official site", "url": "https://www.sagmeisterwalsh.com/" },
+    "type": "Studio"
+  },
+  {
+    "name": "Baron & Baron",
+    "years": "est. 1993",
+    "nationality": "American",
+    "genres": ["Fashion"],
+    "themes": ["Branding and identity"],
+    "bio": "A fashion image-making and branding agency behind advertising campaigns and packaging for major luxury houses, working across photography direction, art direction, and brand identity to build a fashion house's whole visual world rather than a single campaign.",
+    "link": { "label": "Official site", "url": "https://www.baronbaron.com/" },
+    "type": "Studio"
   }
 ]
