@@ -8,11 +8,45 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/style.css" />
 <style>
+  @keyframes cardIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes sweepDown { from { top: 0; } to { top: 100%; } }
+  @keyframes resultIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes glowPulse { 0%, 100% { opacity: .5; } 50% { opacity: 1; } }
+
   .section-card {
     text-decoration: none; display: block; background: var(--panel); border: 1px solid var(--line);
-    padding: 1.4rem 1.5rem; transition: border-color .2s; position: relative;
+    padding: 1.4rem 1.5rem; position: relative; overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    opacity: 0; animation: cardIn .5s ease forwards;
   }
-  .section-card:hover { border-color: var(--accent); }
+  .section-card:nth-child(1) { animation-delay: .04s; }
+  .section-card:nth-child(2) { animation-delay: .1s; }
+  .section-card:nth-child(3) { animation-delay: .16s; }
+  .section-card:nth-child(4) { animation-delay: .22s; }
+  .section-card:nth-child(5) { animation-delay: .28s; }
+  .section-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 10px 30px rgba(193, 68, 14, .18); }
+  .section-card > * { position: relative; z-index: 1; }
+  .section-card::before, .section-card::after, .section-card .corners::before, .section-card .corners::after {
+    content: ""; position: absolute; width: 14px; height: 14px; border: 2px solid var(--accent);
+    opacity: 0; transition: opacity .25s; z-index: 2; pointer-events: none;
+  }
+  .section-card::before { top: 8px; left: 8px; border-right: 0; border-bottom: 0; }
+  .section-card::after { top: 8px; right: 8px; border-left: 0; border-bottom: 0; }
+  .section-card .corners::before { bottom: 8px; left: 8px; border-right: 0; border-top: 0; }
+  .section-card .corners::after { bottom: 8px; right: 8px; border-left: 0; border-top: 0; }
+  .section-card:hover::before, .section-card:hover::after,
+  .section-card:hover .corners::before, .section-card:hover .corners::after { opacity: 1; }
+  .section-card .sweep {
+    position: absolute; left: 0; right: 0; top: -2px; height: 2px; z-index: 1; pointer-events: none;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0;
+  }
+  .section-card:hover .sweep { opacity: .9; animation: sweepDown 1.8s linear infinite; }
+  .section-card .ghost-num {
+    position: absolute; right: .5rem; bottom: -.9rem; font-family: 'JetBrains Mono', monospace;
+    font-size: 4.8rem; font-weight: 600; color: var(--line); z-index: 0; line-height: 1;
+    user-select: none; transition: color .3s;
+  }
+  .section-card:hover .ghost-num { color: rgba(193, 68, 14, .22); }
   .section-card .num { font-family: 'JetBrains Mono', monospace; font-size: .68rem; color: var(--accent); letter-spacing: .1em; }
   .section-card h3 { font-size: 1.15rem; font-weight: 600; margin: .5rem 0 .5rem; }
   .section-card p { color: var(--dim); font-size: .88rem; }
@@ -22,22 +56,40 @@
   }
 
   .search-wrap { position: relative; }
+  .search-wrap::after {
+    content: ""; position: absolute; right: 1.1rem; top: 50%; transform: translateY(-50%);
+    width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+    animation: glowPulse 1.8s ease-in-out infinite; pointer-events: none;
+  }
   #search-input {
     width: 100%; background: var(--panel); border: 1px solid var(--line); color: var(--ink);
-    font-family: 'Space Grotesk', sans-serif; font-size: 1.05rem; padding: .9rem 1.1rem;
+    font-family: 'Space Grotesk', sans-serif; font-size: 1.05rem; padding: .9rem 2.6rem .9rem 1.1rem;
+    transition: border-color .2s, box-shadow .2s;
   }
-  #search-input:focus { outline: none; border-color: var(--accent); }
+  #search-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(193, 68, 14, .15); }
   #search-input::placeholder { color: var(--dim); }
+  #index-ready {
+    font-family: 'JetBrains Mono', monospace; font-size: .68rem; letter-spacing: .06em; color: var(--dim);
+    margin-bottom: .6rem; opacity: 0; transition: opacity .5s;
+  }
   #surprise-btn {
     margin-top: .8rem; background: none; border: 1px solid var(--line); color: var(--dim);
     font-family: 'JetBrains Mono', monospace; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase;
-    padding: .5rem .9rem; cursor: pointer;
+    padding: .5rem .9rem; cursor: pointer; transition: background .2s, color .2s, border-color .2s, transform .12s;
   }
-  #surprise-btn:hover { color: var(--accent); border-color: var(--accent); }
+  #surprise-btn:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  #surprise-btn:active { transform: scale(.95); }
   #search-status { font-family: 'JetBrains Mono', monospace; font-size: .68rem; color: var(--dim); margin: .8rem 0; min-height: 1em; }
+  #search-results .card { animation: resultIn .35s ease both; transition: border-color .2s, transform .2s; }
+  #search-results .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  #search-results .card:nth-child(1) { animation-delay: .02s; }
+  #search-results .card:nth-child(2) { animation-delay: .05s; }
+  #search-results .card:nth-child(3) { animation-delay: .08s; }
+  #search-results .card:nth-child(4) { animation-delay: .11s; }
   #search-results a.result-title { text-decoration: none; color: var(--ink); }
   #search-results a.result-title:hover { color: var(--accent); }
   #search-results .card .tag { margin-bottom: .3rem; }
+  #search-results mark { background: var(--accent); color: var(--bg); padding: 0 .15em; }
 </style>
 </head>
 <body>
@@ -67,6 +119,7 @@
 <main>
   <section class="block">
     <h2>search everything</h2>
+    <div id="index-ready"></div>
     <div class="search-wrap">
       <input type="text" id="search-input" placeholder="try &quot;aperture&quot;, &quot;Nike&quot;, &quot;rule of thirds&quot;, &quot;Nano Banana&quot;&hellip;" autocomplete="off" />
     </div>
@@ -79,30 +132,35 @@
     <h2>sections</h2>
     <div class="card-grid">
       <a class="section-card" href="camera-basics/index.html">
+        <span class="corners"></span><span class="sweep"></span><span class="ghost-num">01</span>
         <span class="num">01</span>
         <h3>Camera Basics</h3>
         <p>The exposure triangle, shutter speed, aperture, depth of field, ISO, white balance, and lens choice. What every photograph is actually made of.</p>
         <div class="stat" data-stat="camera-basics"></div>
       </a>
       <a class="section-card" href="genres/index.html">
+        <span class="corners"></span><span class="sweep"></span><span class="ghost-num">02</span>
         <span class="num">02</span>
         <h3>Genres of Photography</h3>
         <p>What defines portrait, product, food, fashion, lifestyle, street, landscape, architecture, sports, and macro work, and what each genre technically demands.</p>
         <div class="stat" data-stat="genres"></div>
       </a>
       <a class="section-card" href="composition/index.html">
+        <span class="corners"></span><span class="sweep"></span><span class="ghost-num">03</span>
         <span class="num">03</span>
         <h3>Composition</h3>
         <p>Rule of thirds, leading lines, framing, symmetry, negative space, depth, color, and balance: the principles behind why an image works.</p>
         <div class="stat" data-stat="composition"></div>
       </a>
       <a class="section-card" href="explorer/index.html">
+        <span class="corners"></span><span class="sweep"></span><span class="ghost-num">04</span>
         <span class="num">04</span>
         <h3>Photographer &amp; Artist Explorer</h3>
         <p>Photographers, studios, and brands doing well in visuals, historical and contemporary, filterable by type, genre, and theme.</p>
         <div class="stat" data-stat="explorer"></div>
       </a>
       <a class="section-card" href="ai-trends/index.html">
+        <span class="corners"></span><span class="sweep"></span><span class="ghost-num">05</span>
         <span class="num">05</span>
         <h3>AI &times; Commercial Photography</h3>
         <p>A sourced 2025/2026 field guide to how AI image generation is actually integrated into portrait, product, food, lifestyle, and fashion work today.</p>
@@ -172,36 +230,66 @@
 
     statCounts["ai-trends"] = trendCount;
     renderStats();
+
+    const ready = document.getElementById("index-ready");
+    ready.textContent = `${index.length} entries indexed and searchable, start typing`;
+    ready.style.opacity = "1";
+  }
+
+  function animateCount(el, n, suffix) {
+    const start = performance.now();
+    const duration = 700;
+    function step(now) {
+      const t = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = `${Math.floor(eased * n)}${suffix}`;
+      if (t < 1) requestAnimationFrame(step);
+      else el.textContent = `${n}${suffix}`;
+    }
+    requestAnimationFrame(step);
+    // Backstop: guarantees the final value lands even if rAF stalls or is throttled.
+    setTimeout(() => { el.textContent = `${n}${suffix}`; }, duration + 50);
   }
 
   function renderStats() {
+    const suffixes = {
+      "camera-basics": " fundamentals",
+      "genres": " genres",
+      "composition": " principles",
+      "explorer": " profiles",
+      "ai-trends": " trends across 5 categories",
+    };
     document.querySelectorAll("[data-stat]").forEach((el) => {
       const key = el.dataset.stat;
       const n = statCounts[key];
       if (n == null) return;
-      const labels = {
-        "camera-basics": `${n} fundamentals`,
-        "genres": `${n} genres`,
-        "composition": `${n} principles`,
-        "explorer": `${n} profiles`,
-        "ai-trends": `${n} trends across 5 categories`,
-      };
-      el.textContent = labels[key] || `${n} entries`;
+      animateCount(el, n, suffixes[key] || " entries");
     });
   }
 
+  let currentQuery = "";
+
+  function highlight(text, query) {
+    const escaped = esc(text);
+    if (!query) return escaped;
+    const idx = escaped.toLowerCase().indexOf(query.toLowerCase());
+    if (idx === -1) return escaped;
+    return escaped.slice(0, idx) + "<mark>" + escaped.slice(idx, idx + query.length) + "</mark>" + escaped.slice(idx + query.length);
+  }
+
   function resultCard(item) {
-    const snippet = item.body.length > 200 ? esc(item.body.slice(0, 200)) + "&hellip;" : esc(item.body);
+    const raw = item.body.length > 200 ? item.body.slice(0, 200) + "…" : item.body;
     return `<article class="card">
       <span class="tag">${esc(item.section)}</span>
-      <h3><a class="result-title" href="${esc(item.url)}">${esc(item.title)}</a></h3>
-      <p class="body-text">${snippet}</p>
+      <h3><a class="result-title" href="${esc(item.url)}">${highlight(item.title, currentQuery)}</a></h3>
+      <p class="body-text">${highlight(raw, currentQuery)}</p>
     </article>`;
   }
 
   function runSearch(query) {
     const status = document.getElementById("search-status");
     const q = query.trim().toLowerCase();
+    currentQuery = query.trim();
     if (!q) {
       status.textContent = "";
       renderList("search-results", [], resultCard);
@@ -219,6 +307,7 @@
   document.getElementById("surprise-btn").addEventListener("click", () => {
     if (!index.length) return;
     const pick = index[Math.floor(Math.random() * index.length)];
+    currentQuery = "";
     document.getElementById("search-input").value = "";
     document.getElementById("search-status").textContent = `surprise pick, from ${index.length} indexed entries`;
     renderList("search-results", [pick], resultCard);
