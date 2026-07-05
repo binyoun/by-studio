@@ -1,29 +1,28 @@
-# Synthetic Studio
+# BY Studio
 
-A sourced field guide to how AI image generation is being integrated into commercial photography for websites and social media, 2025/2026, across five categories: portrait, product, food, lifestyle, fashion.
+A photography teaching hub: the fundamentals that don't change, and the trends that change every year.
 
-No build step, no framework. Plain HTML/CSS/JS, one shared `js/render.js` fetching per-category `data/*.json` and templating cards into the page, deployed straight to GitHub Pages.
+No build step, no framework. Plain HTML/CSS/JS, shared `css/style.css` and `js/render.js` at the repo root, each section fetches its own `data.json` (or `data/*.json`) and templates cards into the page, deployed straight to GitHub Pages.
 
-## Files
+## Sections
 
-| File | Role |
+| Section | Content |
 |---|---|
-| `index.html` + `data/overview.json` | Landing page: cross-cutting synthesis, platform policy/regulation, model release timeline |
-| `portrait.html` / `product.html` / `food.html` / `lifestyle.html` / `fashion.html` + matching `data/*.json` | One page per category: trends, tools, campaigns/cases, controversy |
-| `tools.html` | Cross-category tool directory, derived from the same category data, filterable by category |
-| `glossary.html` + `data/glossary.json` | Definitions for recurring terms (Nano Banana, digital twin, C2PA, AI slop, etc.) |
-| `research/2025-2026-sources.md` | The full research report every page's citations trace back to |
-| `js/render.js` | Shared fetch + card-templating logic used by every content page |
+| `index.html` | BY Studio landing, links into all four sections |
+| `camera-basics/` | The exposure triangle, shutter speed, aperture/depth of field, ISO, white balance, focal length, metering |
+| `genres/` | Portrait, product, food, fashion, lifestyle, street, landscape, architecture, sports/action, macro. The first five link through to their `ai-trends/` page |
+| `composition/` | Rule of thirds, leading lines, framing, symmetry, negative space, depth, color, balance |
+| `ai-trends/` | A sourced 2025/2026 field guide to AI image generation in commercial photography (portrait, product, food, lifestyle, fashion), formerly the standalone Synthetic Studio site. See `ai-trends/research/2025-2026-sources.md` for the full citation list. |
 
 ## Editing content
 
-Every card on every page (trends, tools, campaigns, controversies) comes from the matching `data/*.json` file. Edit the JSON, not the HTML, to change page content. Each item can carry a `sources: [{label, url}]` array for citation links, and an optional `flagged: true` to mark a claim as unverified/weakly sourced.
+Every card comes from a `data.json` (or `ai-trends/data/*.json`) file next to its page. Edit the JSON, not the HTML, to change content. Items can carry an optional `sources: [{label, url}]` array (used for citations in `ai-trends/`, and for the genre-to-trend cross-links in `genres/data.json`), and an optional `flagged: true` to mark a claim as unverified.
 
 ## Deploy
 
-1. `gh repo create synthetic-studio --public --source=. --remote=origin --push`
+1. `gh repo create by-studio --public --source=. --remote=origin --push`
 2. Settings > Pages > Deploy from branch > main, root
-3. Live at `https://<user>.github.io/synthetic-studio/`
+3. Live at `https://<user>.github.io/by-studio/`
 
 ## House style
 

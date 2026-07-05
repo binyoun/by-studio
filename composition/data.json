@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Rule of thirds",
+    "body": "Divide the frame into a three-by-three grid and place key elements, a horizon, a subject's eyes, along those lines or at their intersections rather than dead center. Off-center placement tends to feel more dynamic and gives the eye somewhere to travel, while dead-center placement reads as static, which is exactly why it's the right choice when static and confrontational is the intended effect. Most cameras can overlay this grid directly in the viewfinder or on the live view screen."
+  },
+  {
+    "title": "Leading lines",
+    "body": "A road, a railing, a shoreline, any line in the frame naturally pulls the eye along its length. Leading lines use that reflex to guide the viewer toward the subject, often from a foreground corner toward a point deeper in the frame, which also builds a sense of depth. Converging lines (railway tracks toward a vanishing point) are the strongest version of this, but even a subtle diagonal shadow or fence line does the same job at a smaller scale."
+  },
+  {
+    "title": "Framing",
+    "body": "A frame within the frame, a doorway, a window, an archway, overhanging branches, isolates the subject and adds depth by giving the image a clear foreground layer. It also does double duty as context: shooting a subject through a market stall's awning tells the viewer where they are without a caption. The technique works with literal architectural frames and with looser ones, a crowd's shoulders parting around a central figure."
+  },
+  {
+    "title": "Symmetry and pattern",
+    "body": "A repeating pattern, tiles, windows, a crowd in matching uniforms, creates visual rhythm, and a break in that pattern, one different tile, one person facing the other way, becomes instantly the most interesting thing in the frame because it violates the expectation the pattern just built. Perfect symmetry (a reflection in still water, a centered architectural facade) works similarly: it reads as calm and ordered, which makes it a strong choice when the subject itself is calm or formal, and a strange one when it isn't."
+  },
+  {
+    "title": "Negative space",
+    "body": "The empty area around a subject, a plain sky, a blank wall, is not wasted frame, it's what gives the subject room to breathe and lets scale and isolation read clearly. A small figure against a large empty field communicates smallness or solitude precisely because there's nothing else competing for attention. Negative space is also where captions, ad copy, or a later crop can live without ever touching the subject."
+  },
+  {
+    "title": "Depth and layering",
+    "body": "A photograph is flat, but a foreground, midground, and background, even a loosely composed one, gives the eye a path through the image and a sense of three-dimensional space. Placing something in the immediate foreground, out of focus or not, an overhanging branch, a blurred hand, pushes the main subject back into its own distinct layer and makes the whole scene feel more spatial than a single flat plane would."
+  },
+  {
+    "title": "Color and contrast",
+    "body": "Complementary colors (blue and orange, red and green) sitting opposite each other on the color wheel create visual tension and make a subject pop against its background, which is why it's the most common color grade in film and advertising. Contrast in tone works the same way structurally: a dark subject against a bright background, or the reverse, separates figure from ground even before color or focus does any of the work."
+  },
+  {
+    "title": "Balance",
+    "body": "An off-center subject needs something, however small, on the opposite side of the frame to keep the composition from feeling like it's toppling over, a smaller secondary object, a patch of color, even just open space of a different tone. This isn't the same as symmetry: balance can be entirely asymmetrical, a large subject on one side counterweighted by a small but visually heavy detail on the other, as long as the two sides feel like they're in conversation rather than one being simply empty."
+  }
+]

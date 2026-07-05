@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Portrait",
+    "body": "Portraiture is about a face and what it's doing, so the technical choices bend toward the subject: a wide aperture for shallow depth of field that separates the person from the background, a longer lens (85mm and up) to flatten features flatteringly and let you shoot from a comfortable distance, and soft, controlled light, a large diffused source or open shade, to render skin gently. Directing a person is as much of the craft as the camera settings: expression and pose don't hold still for a light meter.",
+    "sources": [{ "label": "See 2025/2026 AI trends in portrait", "url": "../ai-trends/portrait.html" }]
+  },
+  {
+    "title": "Product",
+    "body": "Product photography sells an object's material truth: its texture, scale, and finish have to read accurately, because the photo is often the only contact a buyer has with the thing before purchase. It leans on controlled studio light (softboxes, light tents for reflective or transparent objects), a narrow aperture for front-to-back sharpness, and rigorous consistency across a catalog, same angle, same lighting ratio, same background, so hundreds of listings feel like one coherent store.",
+    "sources": [{ "label": "See 2025/2026 AI trends in product", "url": "../ai-trends/product.html" }]
+  },
+  {
+    "title": "Food",
+    "body": "Food photography is a race against time: ice cream melts, steam disappears, garnish wilts. It combines styling (props, plating, sometimes stand-ins for the actual dish during setup) with light that makes texture legible, often side or back light rather than flat front light, since it's the glisten, crumb, and steam that sell the dish. A macro or close-focusing lens and a shallow depth of field are common, drawing the eye to one perfect bite while the rest of the plate falls softly out of focus.",
+    "sources": [{ "label": "See 2025/2026 AI trends in food", "url": "../ai-trends/food.html" }]
+  },
+  {
+    "title": "Fashion",
+    "body": "Fashion photography sells a garment through a body in motion or in a held pose, and its technical demands sit between portrait and product: enough sharpness to show fabric and construction, enough dynamism in pose and light to make clothing feel alive rather than draped on a mannequin. Editorial fashion work leans into concept and mood, sometimes at the expense of literal garment clarity, while e-commerce fashion work goes the other way, prioritizing accurate color and fit above all else.",
+    "sources": [{ "label": "See 2025/2026 AI trends in fashion", "url": "../ai-trends/fashion.html" }]
+  },
+  {
+    "title": "Lifestyle",
+    "body": "Lifestyle photography stages a moment to look unstaged: people using a product, occupying a space, or living a scenario the image is selling. The craft is in the appearance of candidness, natural light or light that mimics it, genuine-feeling interaction between subjects, and a documentary shooting rhythm (looser framing, more frames per setup) even though the scene is fully art-directed. It sits adjacent to advertising and is often the genre most directly in competition with generated stock imagery, because its whole premise, a generic person in a generic moment, is exactly what a model can synthesize.",
+    "sources": [{ "label": "See 2025/2026 AI trends in lifestyle", "url": "../ai-trends/lifestyle.html" }]
+  },
+  {
+    "title": "Street",
+    "body": "Street photography finds a composition inside a moving, uncontrolled world rather than building one. It rewards fast, unobtrusive gear, a small prime lens, quick and confident manual or aperture-priority exposure, and enough depth of field to keep a spontaneous moment sharp without time to fine-focus. The discipline here is almost entirely about anticipation and timing, seeing a composition assemble itself a second before it happens, rather than any lighting setup."
+  },
+  {
+    "title": "Landscape",
+    "body": "Landscape photography is a discipline of patience and light: the same view can be unremarkable at noon and extraordinary twenty minutes after sunset. It typically uses a narrow aperture (f/8 to f/16) for front-to-back sharpness, a tripod to allow slower shutter speeds in low light, and a wide-angle lens to hold a full scene together, though longer lenses are just as valid for compressing distant layers like mountain ridges. Filters (graduated neutral density, polarizers) remain common tools for controlling extreme dynamic range between sky and ground."
+  },
+  {
+    "title": "Architecture",
+    "body": "Architectural photography answers to geometry: converging verticals (buildings that appear to lean inward) read as a mistake, not a stylistic choice, in most professional contexts, which is why tilt-shift or shift lenses, or careful perspective correction in post, matter more here than in almost any other genre. A narrow aperture, a tripod, and attention to the time of day, so glass doesn't glare and shadows don't swallow facade detail, round out the core toolkit."
+  },
+  {
+    "title": "Sports and action",
+    "body": "Sports and action photography is built entirely around timing and shutter speed: a fast shutter (1/1000 or faster) freezes peak action, while a deliberately slower shutter paired with panning can convey speed by blurring the background while the subject stays sharp. Long telephoto lenses are standard, since proximity to the action is rarely possible, and continuous autofocus tracking matters more here than in almost any other genre, since the subject is never holding still."
+  },
+  {
+    "title": "Macro",
+    "body": "Macro photography magnifies the small, insects, water droplets, texture, close enough that depth of field becomes extremely thin even at narrow apertures, sometimes just millimeters. This makes focus stacking (combining multiple frames focused at slightly different distances) a standard technique rather than a novelty, and it makes stability critical: a tripod, or focus-stacking rail, does more work here than in almost any other genre, since even breathing can shift the plane of focus at this scale."
+  }
+]

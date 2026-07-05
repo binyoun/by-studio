@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Genres &middot; BY Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<nav class="top">
+  <a class="brand" href="../index.html">BY <span class="accent">Studio</span></a>
+  <div class="links">
+    <a href="../index.html">home</a>
+    <a href="../camera-basics/index.html">camera basics</a>
+    <a href="index.html" class="active">genres</a>
+    <a href="../composition/index.html">composition</a>
+    <a href="../ai-trends/index.html">ai trends</a>
+  </div>
+</nav>
+
+<header class="page">
+  <div class="mono eyebrow">02 &middot; fundamentals</div>
+  <h1>Genres of Photography</h1>
+  <p class="intro">What defines each genre and what it technically demands. Five of these, portrait, product, food, lifestyle, and fashion, link through to their own 2025/2026 AI-trends page.</p>
+</header>
+
+<main>
+  <section class="block">
+    <div class="card-grid" id="items"></div>
+  </section>
+</main>
+
+<footer class="site">
+  built for students, not clients &middot; <a href="https://github.com/binyoun/by-studio" target="_blank" rel="noopener">the repo</a> &middot; no em-dashes, on principle
+</footer>
+
+<script src="../js/render.js"></script>
+<script>
+  async function init() {
+    const items = await (await fetch("data.json")).json();
+    renderList("items", items, trendCard);
+  }
+  init();
+</script>
+</body>
+</html>

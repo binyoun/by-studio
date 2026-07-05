@@ -1,0 +1,30 @@
+[
+  {
+    "title": "The exposure triangle",
+    "body": "Every exposure is a negotiation between three settings: shutter speed, aperture, and ISO. Each one controls how much light reaches the sensor, and each one also carries a visible side effect, shutter speed affects motion, aperture affects depth of field, ISO affects noise. There is no single correct exposure for a scene. A photographer choosing to underexpose for mood, or overexpose for a washed-out high-key look, is making an aesthetic decision, not a mistake. Learning this triangle is learning to trade one variable against another on purpose."
+  },
+  {
+    "title": "Shutter speed",
+    "body": "Shutter speed is how long the sensor is exposed to light, measured in fractions of a second (1/1000, 1/250, 1/30) or, at the slow end, in whole seconds. Fast shutter speeds freeze motion and suit action or sports work. Slow shutter speeds let moving subjects blur, useful for conveying speed, or for smoothing water and light trails, but they require a tripod past about 1/60 to avoid unwanted camera shake. Bulb mode holds the shutter open for as long as the button is pressed, the tool behind long star trails, light painting, and multi-minute night exposures."
+  },
+  {
+    "title": "Aperture and depth of field",
+    "body": "Aperture is the size of the lens opening, measured in f-stops (f/1.4, f/2.8, f/8, f/16). Counterintuitively, a smaller f-number means a larger opening and more light. A wide aperture (low f-number) also produces a shallow depth of field, a thin slice of the image in focus, which is why portraits often use f/1.8 to melt the background into soft blur, an effect called bokeh. A narrow aperture (high f-number) keeps more of the scene in focus front to back, the standard choice for landscape or architectural work where everything needs to read sharp."
+  },
+  {
+    "title": "ISO",
+    "body": "ISO measures the sensor's sensitivity to light. A low ISO (100 to 200) gives the cleanest image and is the default in good light. Raising ISO (800, 1600, 3200 and beyond) brightens the image in dark conditions at the cost of visible grain or noise. Modern sensors handle high ISO far better than they did a decade ago, but the tradeoff is still real: ISO is the setting to raise last, after shutter speed and aperture have already been chosen for their creative effect, not the first dial to reach for."
+  },
+  {
+    "title": "White balance and color temperature",
+    "body": "Light sources differ in color, measured in kelvin: candlelight sits around 1900K and reads orange, daylight around 5500K reads neutral, overcast sky and shade run cooler and read blue. White balance is the camera's correction for this, telling it what should read as neutral white so everything else falls into place. Shooting in raw keeps this fully adjustable after the fact, shooting in JPEG bakes the choice in. Deliberately mismatching white balance to the light source, keeping a tungsten-lit interior warm instead of correcting it to neutral, is a common way to preserve the mood of a scene rather than neutralize it."
+  },
+  {
+    "title": "Focal length and lens choice",
+    "body": "Focal length, measured in millimeters, determines field of view and perspective, not just zoom. Wide lenses (16 to 35mm) exaggerate depth and are common in landscape, architecture, and environmental work. Standard lenses (35 to 50mm) approximate natural human perspective and suit documentary and street photography. Telephoto lenses (85mm and up) compress space, flatten the background, and are the standard choice for portraits, isolating a subject from a distance, and for sports and wildlife, where physical proximity isn't possible."
+  },
+  {
+    "title": "Metering modes",
+    "body": "A camera's meter decides what a correct exposure means by measuring the light in the frame, but it can be told where to look. Matrix or evaluative metering averages the whole frame and is the reliable default for even lighting. Center-weighted metering favors the middle of the frame, useful when the subject dominates the composition. Spot metering reads a single small point, essential when a subject is much brighter or darker than its surroundings, a backlit portrait or a spotlit performer, where an average reading would badly under or overexpose the one thing that matters."
+  }
+]

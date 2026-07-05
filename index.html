@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BY Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .section-card {
+    text-decoration: none; display: block; background: var(--panel); border: 1px solid var(--line);
+    padding: 1.4rem 1.5rem; transition: border-color .2s;
+  }
+  .section-card:hover { border-color: var(--accent); }
+  .section-card .num { font-family: 'JetBrains Mono', monospace; font-size: .68rem; color: var(--accent); letter-spacing: .1em; }
+  .section-card h3 { font-size: 1.15rem; font-weight: 600; margin: .5rem 0 .5rem; }
+  .section-card p { color: var(--dim); font-size: .88rem; }
+</style>
+</head>
+<body>
+<nav class="top">
+  <a class="brand" href="index.html">BY <span class="accent">Studio</span></a>
+  <div class="links">
+    <a href="index.html" class="active">home</a>
+    <a href="camera-basics/index.html">camera basics</a>
+    <a href="genres/index.html">genres</a>
+    <a href="composition/index.html">composition</a>
+    <a href="ai-trends/index.html">ai trends</a>
+  </div>
+</nav>
+
+<header class="page">
+  <div class="mono eyebrow">photography, taught plainly</div>
+  <h1>BY Studio</h1>
+  <p class="intro">
+    A teaching hub for photography students: the fundamentals that don't change, and the
+    trends that change every year. Camera basics, the genres of commercial photography,
+    composition, and a sourced field guide to how AI image generation is actually being
+    used in the industry right now.
+  </p>
+</header>
+
+<main>
+  <section class="block">
+    <h2>sections</h2>
+    <div class="card-grid">
+      <a class="section-card" href="camera-basics/index.html">
+        <span class="num">01</span>
+        <h3>Camera Basics</h3>
+        <p>The exposure triangle, shutter speed, aperture, depth of field, ISO, white balance, and lens choice. What every photograph is actually made of.</p>
+      </a>
+      <a class="section-card" href="genres/index.html">
+        <span class="num">02</span>
+        <h3>Genres of Photography</h3>
+        <p>What defines portrait, product, food, fashion, lifestyle, street, landscape, architecture, sports, and macro work, and what each genre technically demands.</p>
+      </a>
+      <a class="section-card" href="composition/index.html">
+        <span class="num">03</span>
+        <h3>Composition</h3>
+        <p>Rule of thirds, leading lines, framing, symmetry, negative space, depth, color, and balance: the principles behind why an image works.</p>
+      </a>
+      <a class="section-card" href="ai-trends/index.html">
+        <span class="num">04</span>
+        <h3>AI &times; Commercial Photography</h3>
+        <p>A sourced 2025/2026 field guide to how AI image generation is actually integrated into portrait, product, food, lifestyle, and fashion work today.</p>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  built for students, not clients &middot; <a href="https://github.com/binyoun/by-studio" target="_blank" rel="noopener">the repo</a> &middot; no em-dashes, on principle
+</footer>
+</body>
+</html>
