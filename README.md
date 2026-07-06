@@ -4,6 +4,20 @@ A photography teaching hub: the fundamentals that don't change, and the trends t
 
 No build step, no framework. Plain HTML/CSS/JS, shared `css/style.css` and `js/render.js` at the repo root, each section fetches its own `data.json` (or `data/*.json`) and templates cards into the page, deployed straight to GitHub Pages.
 
+## Status as of 2026-07-05
+
+All five sections are live and verified (served locally, checked in headless Chrome for console errors, real content confirmed rendering, not just page-load success). Live at `https://binyoun.github.io/by-studio/`.
+
+This session's work, in order: built the site from the earlier standalone Synthetic Studio repo (moved in as `ai-trends/`), added Camera Basics/Genres/Composition/Explorer, expanded Composition from 8 to 14 principles, expanded Explorer from 25 photographers to 35 (added 10 studios/brands with 22 verified named campaign examples to fill out the thin Product/Food genres), then made the landing page interactive (a client-side search indexing all 174 data entries site-wide, live stat counts, a surprise-me picker) and fixed two real bugs found along the way:
+
+- `.card-grid` was CSS Grid with `auto-fill`, so an incomplete last row (fewer cards than a full row) pinned left with a dead gap instead of centering. Fixed by switching to flexbox with `justify-content: center`.
+- That fix exposed a pre-existing double-nesting bug: `renderList()` in `js/render.js` always wraps its output in a fresh `<div class="card-grid">`, but several page containers also had `class="card-grid"` applied directly, nesting one grid inside another. The old CSS Grid version accidentally masked this (a lone grid item just stretched to fill the row); centering broke that accidental workaround. Fixed by removing the redundant class at the 7 affected containers (kept only where content is written directly without going through `renderList`, i.e. `ai-trends/index.html`'s synthesis block and `ai-trends/glossary.html`).
+
+Known open items for whenever this picks back up:
+- A handful of citation URLs in `ai-trends/` and `explorer/data.json` return 403/406 to automated `curl` checks (Business Standard, Campaign US, PYMNTS, and others), almost certainly bot-blocking rather than dead links, real browsers load them fine, but worth a manual spot-check before relying on them for class.
+- Camera Basics/Genres/Composition page copy is original writing but hasn't had a second editing pass for voice, unlike `ai-trends/` which went through a dedicated research phase.
+- GitHub Pages builds for this repo have intermittently errored or stalled well past their usual ~30 second build time. If a push doesn't show up live after a few minutes, check `gh api repos/binyoun/by-studio/pages/builds/latest` and retrigger with `gh api -X POST repos/binyoun/by-studio/pages/builds` if needed, this has resolved it every time so far.
+
 ## Sections
 
 | Section | Content |
